@@ -42,7 +42,7 @@ This is the website created for EZFresh. <br>
 - Help local small businesses
 
 ## Planning
-PDF of the following could be found under the deliverables<br>
+PDF of the following could be found under the deliverables folder<br>
 - Business name, problem, solution, and logo
 - Website Outline
 - Business Plan Outline & Budget
