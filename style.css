@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    background-image: url(assets/dose-juice-j_YWoV_uzRw-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-wrapper > .nav-link-wrapper > a{
+    margin-right: 50px;
+}
+
+/* .nav-wrapper{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px;
+    backdrop-filter: blur(80px);
+} */
+
+/* .nav-link-wrapper{
+    height: 22px;
+} */
+
+/* Reference this for sticky nav bar
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+ */
+
+.nav-wrapper{
+    display:flex;
+    padding: 30px;
+    background-color:rgba(255,255,255,0.8);
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+/* .nav-wrapper > .nav-link-wrapper > a{
+    margin-left: 20px;
+} */
+
+/* #nav-wrapper{
+    display:flex;
+    justify-content: space-between;
+    overflow:hidden;
+    backdrop-filter: blur(70px);
+    padding: 20px;
+} */
+
+.nav-link-wrapper a {
+    flex-grow:3;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #004403;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper a:hover{
+    border-bottom: 2px solid #5DB66D;
+    color:#5DB66D;
+}
+
+.active-nav-link a{
+    border-bottom: 2px solid #5DB66D;
+    color:#5DB66D !important;
+}
+
+.brand{
+    flex-grow:1;
+}
+
+.brand a{
+    text-decoration: none;
+    font-size: 1.5em; 
+    color:#004403;
+}
+
+.container p{
+    font-size: 2.5em;
+}
