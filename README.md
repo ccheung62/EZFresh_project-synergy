@@ -1,5 +1,5 @@
 # Project Synergy
-Project Synergy is a semeseter-long group assigment created by [Diverse Influence](https://www.diverseinfluencers.org/program.html) where we<br>
+Project Synergy is a semester-long group assigment created by [Diverse Influence](https://www.diverseinfluencers.org/program.html) where we<br>
 - collaborate as a team of four (two technology fellow and two business fellow)
 - brainstorm a business idea 
 - create a marketing strategy
@@ -42,7 +42,7 @@ This is the website created for EZFresh. <br>
 - Help local small businesses
 
 ## Planning
-PDF of the following could be found under the deliverables folder<br>
+PDF of the following could be found under the `deliverables` folder<br>
 - Business name, problem, solution, and logo
 - Website Outline
 - Business Plan Outline & Budget
