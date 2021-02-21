@@ -3,34 +3,60 @@
 <head>
     <meta charset = "utf-8"/>
     <title>EZFresh</title>
+    <!-- Fonts from Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous">    
+    <!-- Favicon -->
     <link rel= "icon" href = "assets/icon.png">
     <link rel= "stylesheet" href = "style.css">
     <script src= "script.js"></script>
+    <!-- Script from CSS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+        crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-   <div class="container">
-       <div class="nav-wrapper">
-            <div class="brand">
-                <a href = "index.html" title="Home page"><img src = "assets/icon.png" height = 30px><i>EZ </i>Fresh</a>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class = "container-fluid p-3">
+            <a class = "navbar-brand" href = "index.html" title="Home page">
+                <img src = "assets/icon.png" height = 40px>
+                <i>EZ </i>Fresh
+            </a>
+            <!-- toggler when the screen size decrease -->
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarCollapse" 
+                aria-controls="navbarCollapse" 
+                aria-expanded="false"
+                aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto mb-2 mb-md-0 d-flex flex-end">
+                    <span class = "active-nav-link"><a class="nav-link active" aria-current = "page" href = "index.html" title = "Home page">Home</a></span>
+                    <a class= "nav-link" href = "about.html" title = "About page">About</a>
+                    <a class= "nav-link" href = "product.html" title = "Product page">Product</a>
+                    <a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a>
+                    <a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a>
+                </div>
             </div>
-           <!-- <div class="nav-link-wrapper active-nav-link">
-                <a href = "index.html">Home</a>
-           </div> -->
-           <div class="nav-link-wrapper">
-               <span class = "active-nav-link"><a href = "index.html" title = "Home page">Home</a></span>
-                <a href = "about.html" title = "About page">About</a>
-                <a href = "product.html" title = "Product page">Product</a>
-                <a href = "faq.html" title = "FAQ">FAQ</a>
-                <a href = "contact.html" title = "Contact page">Contact Us</a>
-           </div>
-       </div>
-
-       <div class="section1">
-            <div class = "sec1left">
+        </div>
+    </nav>
+    <!-- Section 1 -->
+   <div class="container">
+       <section class="section1 row">
+            <div class = "sec1left col-md-6">
                 <span style="font-size:30px">We Care For</span> <!-- 25px -->
                 <div class="break"></div>
                 <span class="highlight" style="font-size:40px; color:#002502"> <!-- 35px -->
@@ -39,10 +65,11 @@
                 <div class="break"></div>
                 <span style="font-size:35px">Es Hora De Comer</span>  <!-- 30px -->
             </div>  
-            <div class="sec1right">
-                <img src = "assets/undraw_shopping_app_flsj.png" height="410px" alt = "shopping online">
+            <div class="sec1right col-md-6">
+                <img src = "assets/framed-shopping-online.png" height="550px" alt = "shopping online">
             </div>
-       </div>
+       </section>
+    </div>
 
        <p>
            1<br>
@@ -148,7 +175,6 @@
            1<br>
            1<br>
        </p>
-   </div>
 
 </body>
 
