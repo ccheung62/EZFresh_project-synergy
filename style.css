@@ -74,10 +74,6 @@ body{
     flex-wrap:wrap;
     font-size:x-large;
     align-content: center;
-    /* padding-top:40%;
-    padding-bottom:37%;
-    padding-left:34%;
-    padding-right:15%; */
     padding-right: 33%;
     padding-top: 7%;
     padding-bottom: 5%;
@@ -99,6 +95,9 @@ body{
 
 .linktohaul{
     background-color:#f7f4f4;
+}
+
+.prettyLink{
     color:#004403;
     text-decoration:none;
     border-bottom: 2px solid transparent;
@@ -106,7 +105,7 @@ body{
     transition: color 0.5s;
 }
 
-.linktohaul:hover{
+.prettyLink:hover{
     border-bottom: 2px solid #5DB66D !important;
     color:#5DB66D !important;
 }
@@ -142,6 +141,8 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    text-align:center;
 }
 
 /* Section 2 */
@@ -157,6 +158,7 @@ body{
 
 .caption{
     font-size:medium;
+    background-color:#eeeeee;
 }
 
 .heading{
@@ -174,5 +176,27 @@ body{
     align-items: center;
 }
 
-/* Weekly Haul */
+/* Section 3 */
+
+.sec3img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+.endFooter{
+    font-family: 'ABeeZee', 'Montserrat', sans-serif;
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#c9c4c4;
+    color:#ffffff;
+}
+
+.footercol{
+    display:flex;
+    flex-direction:column;
+}
 
