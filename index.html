@@ -5,18 +5,14 @@
     <title>EZ Fresh</title>
     <!-- Fonts from Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet"> 
-        最後結合起來-->
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <!-- CSS bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
         crossorigin="anonymous">    
     <!-- Favicon -->
-    <link rel= "icon" href = "assets/icon.png">
+    <link rel= "icon" href = "assets/circle-icon.png">
     <link rel= "stylesheet" href = "style.css">
     <script src= "script.js"></script>
     <!-- Script from CSS Bootstrap -->
@@ -27,6 +23,7 @@
 </head>
 
 <body>
+    
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top px-5">
         <div class = "container-fluid p-2">
@@ -58,39 +55,40 @@
             </div>
         </div>
     </nav>
+
     <!-- Beginning -->
     <section class="startsec row">
-            <div class = "col-lg-7 order-2 pt-5">
-                <p class = "startsectag">
+        <div class = "col-lg-7 order-2 pt-5">
+            <p class = "startsectag">
                     <span style="font-size:0.9em;background-color:#eff0f2;">We Care For&nbsp;</span>
                     <span class="highlight" style="font-size:1.2em;color:#002502;background-color:#eff0f2;"> 
                         OUR COMMUNITY
                     </span> 
                     <span style="font-size:1em;background-color:#eff0f2;">&nbsp;Es Hora De Comer</span>
-                </p>
-                <span class = "px-4 py-2" style = "background-color:#f7f4f4;color:#004403;font-size: xx-large;font-weight:bolder;">
-                    Inspired to cook something new?
-                </span>
-                <div class = "searchBar row d-flex pt-3 pe-5" style = "flex-wrap: nowrap;">
-                    <div class = "col-2"></div>
-                    <div class = "col-8">
-                        <input class = "form-control" placeholder="Search for Supermarkets near you">
-                    </div>
-                    <div class = "col-2">
-                        <button class = "btn mb-3" style = "background-color:#72b67e; color:#ffffff">Search</button>
-                    </div>
+            </p>
+            <span class = "px-4 py-2" style = "background-color:#f7f4f4;color:#004403;font-size: xx-large;font-weight:bolder;">
+                Inspired to cook something new?
+            </span>
+            <div class = "searchBar row d-flex pt-3 pe-5" style = "flex-wrap: nowrap;">
+                <div class = "col-2"></div>
+                <div class = "col-8">
+                    <input class = "form-control" placeholder="Search for Supermarkets near you">
                 </div>
-                <a class = "me-5" style="display:flex;justify-content: flex-end; text-decoration: none" href ="#redirectrecipe" >
-                    <span class = "prettyLink linktohaul" >
-                        Still unsure? Check out our&nbsp;<span style = "color:#4eb861">weekly recipe haul</span>
-                    </span>
+                <div class = "col-2">
+                    <button class = "btn mb-3" style = "background-color:#72b67e; color:#ffffff">Search</button>
+                </div>
+            </div>
+            <span class = "me-5" style="display:flex;justify-content: flex-end; text-decoration: none">
+                <a href="#redirectrecipe" class = "prettyLink" style = "background-color:#f7f4f4;" >
+                    Still unsure? Check out our&nbsp;<span style = "color:#4eb861">weekly recipe haul</span>
                 </a>
-            </div>  
-            <div class="startsecimg col-lg-5 order-1 py-4 ps-5">
-                <img src = "assets/leavelyshopping.png" height="550px" alt = "shopping online">
-            </div>
+            </span>
+        </div>  
+        <div class="startsecimg col-lg-5 order-1 py-4 ps-5">
+            <img src = "assets/leavelyshopping.png" height="550px" alt = "shopping online">
+        </div>
 
-            </div>
+        </div>
     </section>
     <!-- Welcome phrase -->
     <div class="container">
@@ -104,6 +102,7 @@
             </p>
             <span class = "goldenleaf col-2"></span>
         </div>  -->
+
         <!-- Section 1 -->
         <div class="section1 row pt-3">
             <p class = "title">
@@ -112,25 +111,26 @@
             <p class = "caption" style="display:flex;justify-content:center;align-items:center;">
                 It's That Simple!
             </p>
-            <div class = "icon col-md-3" style="padding-right:6%;padding-left:6%">
+            <!-- <div class = "icon col-md-3" style="padding-right:6%;padding-left:6%">
                 <img src="assets/Register.png" height="100px">
                 <p>Register</p>
-            </div>
-            <div class = "icon col-md-3">
+            </div> -->
+            <div class = "icon col-md-4">
                 <img src="assets/pick-address.png" height="100px">
                 <p>Pick your Supermarket</p>
             </div>
-            <div class = "icon col-md-3">
+            <div class = "icon col-md-4">
                 <img src="assets/pick-produce.png" height="100px">
                 <p>Choose your grocery</p>
             </div>
-            <div class="icon col-md-3" style="padding-right:6%;padding-left:6%">
+            <div class="icon col-md-4" style="padding-right:6%;padding-left:6%">
                 <img src="assets/checkout.png" height="100px">
                 <p>Checkout</p>
             </div>
         </div>
+
         <!-- Section 2 -->
-        <section class = "section2 row">
+        <section class = "section2 pt-5 row">
                 <div class = "caption col-md-6">
                     <p class = "heading">
                         Shopping At Your Fingertips. <span class = "highlight">Easy and Safe</span>, Just like that!<br>
@@ -146,9 +146,10 @@
                     <img src = "assets/undraw_add_to_cart_vkjp.png" height="350px">
                 </div>
         </section>
+
         <!-- Section 3 -->
         <section class = "section3 row pt-5">
-                <div class = "caption col-md-6 order-2">
+                <div class = "caption col-md-5 order-2">
                     <p class = "heading">
                         Get the <span class = "highlight">Best Services</span>! Discounts Every Wednesdays!
                     </p>
@@ -157,10 +158,11 @@
                         That’s right! For your first purchase, enter code EZFRESHHURAH&lt;3 and get a <span id = "redirectrecipe" style = "color:#4eb861">50% discount</span> off your order. AMAZINGLY DELICIOUS! 
                     </p>
                 </div>
-                <div class = "col-md-6 sec3img order-1">
+                <div class = "col-md-7 sec3img order-1">
                     <img src = "assets/undraw_discount_d4bd.png" height="350px">
                 </div>
         </section>
+
         <!-- Weekly Recipe Haul  -->
         <section class = "py-3 row">
             <p class = "title">
@@ -169,52 +171,56 @@
             <p class = "caption" style = "display:flex;justify-content:center;align-items: center;">
                 Want to be inspired? Check out this weeks featured recipes!
             </p>
-            <div class = "col-lg-3">
-                <div class="card">
-                    <img src="" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Dish Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn" target = "_blank" style="background-color:#72b67e; color:#ffffff">See recipe & ingredients</a>
+                <div class = "col-lg-3">
+                    <div class="card">
+                        <img src="assets/burger.png" class="card-img-top" alt="Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Gordon's 10 Millionth Youtube Subscriber Burger</h5>
+                            <p class="card-text">"Gordon's just hit 10 Million Subscribers on YouTube and to celebrate, he's making the perfect burger for the grill...with a few tricks!"</p>
+                            <p class ="recipeCredit">from Gordon Ramsay</p>
+                            <a href="https://www.gordonramsay.com/gr/recipes/gr10million/" class="btn" target = "_blank" style="background-color:#72b67e; color:#ffffff">See recipe & ingredients</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Dish Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn" target = "_blank" style="background-color:#72b67e; color:#ffffff">See recipe & ingredients</a>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="assets/Curry Potatoes.png" class="card-img-top" alt="Curry Potatoes">
+                        <div class="card-body">
+                            <h5 class="card-title">Little Chef Naia’s Braised Curry Potatoes</h5>
+                            <p class="card-text">"Delicious braised curry potatoes from 2015 Little Chef winner Naia! Make these at home with your own Little Chefs—have some fun in the kitchen!"</p>
+                            <p class ="recipeCredit">from Little Chef Naia</p>
+                            <a href="https://www.littlepotatoes.com/recipes/little-chef-naias-braised-curry-potatoes/" class="btn" target = "_blank" style="background-color:#72b67e; color:#ffffff">See recipe & ingredients</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Dish Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn" target = "_blank" style="background-color:#72b67e; color:#ffffff">See recipe & ingredients</a>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="assets/brownie.png" class="card-img-top" alt="Brownie">
+                        <div class="card-body">
+                            <h5 class="card-title">Instant Pot Brownie</h5>
+                            <p class="card-text">"I had so much fun trying to bake these dessert recipes in an Instant Pot for the first time ever! I can't believe how well this worked after a little trial and error."</p>
+                            <p class ="recipeCredit">from Rosanna Pansion</p>
+                            <a href="https://rosannapansino.com/blogs/recipes/instant-pot-brownie" class="btn" target = "_blank" style="background-color:#72b67e; color:#ffffff">See recipe & ingredients</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card">
-                    <img src="" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Dish Title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" target = "_blank" class="btn" style="background-color:#72b67e; color:#ffffff">See recipe & ingredients</a>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5265636.jpg" class="card-img-top" alt="Vietnamese Fresh Spring Rolls">
+                        <div class="card-body">
+                            <h5 class="card-title">Vietnamese Fresh Spring Rolls</h5>
+                            <p class="card-text">"These spring rolls are a refreshing change from the usual fried variety, and have become a family favorite. They are great as a cool summertime appetizer, and are delicious dipped in one or both of the sauces."</p>
+                            <p class ="recipeCredit">from Anonymous</p>
+                            <a href="https://www.allrecipes.com/recipe/24239/vietnamese-fresh-spring-rolls/" target = "_blank" class="btn" style="background-color:#72b67e; color:#ffffff">See recipe & ingredients</a>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
     </div>
     <footer class = "endFooter mt-4">
         <div class="row">
             <div class = "col-md-6 py-4">
-                <p class = "p-2 d-flex" style="background-color:#4a804c;justify-content:space-evenly;">
+                <p class = "p-2 d-flex" style="background-color:#569c58;justify-content:space-evenly;">
                     Follow us on social media!
                     <span>
                         <a class = "px-2" href = "" ><img src = "assets/facebook-icon.png" height=30px></a>
@@ -226,25 +232,25 @@
         </div>
         <div class="row px-5 pb-5">
             <div class = "col-md-3">
-                <p class = "heading" style = "color:#eeeeee">
+                <p class = "heading" style = "color:#444444;">
                     EZ Fresh
                 </p>
-                <p style="font-size:large;">
+                <p class="pe-2" style="font-size:large;color:#002402">
                     Shopping made safe and easier at your fingertip!
                 </p>
             </div>
             <div class="col-md-3 order-2">
-                <p class="heading" style = "color:#eeeeee">
-                    Useful Links
+                <p class="heading" style = "color:#4e4c4c;font-size:1.5em;">
+                    Resources
                 </p>
                 <span class = "footercol">
                     <a class = "prettyLink" href = "">Manage Your Account</a>
-                    <a class = "prettyLink" href = "">Careers- Come Work with Us</a>
-                    <a class = "prettyLink" href = "">Partner with Us</a>
+                    <a class = "prettyLink" href = "contact.html">Careers- Come Work with Us</a>
+                    <a class = "prettyLink" href = "contact.html">Partner with Us</a>
                 </span>
             </div>
             <div class="col-md-3 order-3">
-                <p class = "heading" style = "color:#eeeeee">
+                <p class = "heading" style = "color:#4e4c4c;font-size:1.5em;">
                     Contact Us
                 </p>
                 <p class = "footercol">
@@ -254,7 +260,7 @@
                 </p>
             </div>
             <div class="col-md-3 order-1">
-                <p class = "heading" style = "color:#eeeeee">
+                <p class = "heading" style = "color:#4e4c4c;font-size:1.5em;">
                     Learn More
                 </p>
                 <span class = "footercol">
