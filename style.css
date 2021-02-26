@@ -156,6 +156,7 @@ body{
 
 /* Section 1 */
 .icon{
+    font-family: 'ABeeZee', 'Montserrat', sans-serif;
     display:flex;
     justify-content: center;
     align-items: center;
