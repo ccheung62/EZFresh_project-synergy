@@ -17,12 +17,12 @@ Project Synergy is a semester-long group assigment created by [Diverse Influence
 
 # EZ Fresh
 EZ Fresh is the mock business idea we came up to make getting daily grocery easier and safer during the pandemic while supporting local supermarkets. <br>
-This is the website created for EZFresh. <br>
+<!-- This is the website created for EZFresh. <br>
 The website utilizes 
 - [Bootstrap](https://getbootstrap.com/)
 - Illustrations from 
     - [unDraw](https://undraw.co/illustrations)
-    - [Pixabay](https://pixabay.com/)
+    - [Pixabay](https://pixabay.com/) -->
 
 
 ## Problem 
