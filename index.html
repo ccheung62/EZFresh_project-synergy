@@ -36,48 +36,48 @@
 <body>
     
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top px-5">
-        <div class = "container-fluid p-2">
-            <a class = "navbar-brand" href = "index.html" title="Home page">
-                <img src = "assets/icon.png" height = 40px>
-                <i>EZ </i>Fresh
-            </a>
-            <!-- toggler when the screen size decrease -->
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarCollapse" 
-                aria-controls="navbarCollapse" 
-                aria-expanded="false"
-                aria-label="Toggle navigation"> 
-                    <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto mb-2 mb-md-0">
-                    <span class = "active-nav-link">
-                        <a class="nav-link active" aria-current = "page" href = "index.html" title = "Home page">Home</a>
-                    </span>
-                    <a class= "nav-link" href = "about.html" title = "About page">About</a>
-                    <a class= "nav-link" href = "product.html" title = "Product page">Product</a>
-                    <a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a>
-                    <a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a>
-                </div>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top px-5 py-3 container-fluid">
+        <a class = "navbar-brand" href = "index.html" title="Home page">
+            <img src = "assets/icon.png" height = 40px>
+            <i>EZ </i>Fresh
+        </a>
+        <!-- toggler when the screen size decrease -->
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarCollapse" 
+            aria-controls="navbarCollapse" 
+            aria-expanded="false"
+            aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id = "navbarCollapse">
+            <div class="navbar-nav ms-auto mb-2 mb-md-0">
+                <span class = "active-nav-link">
+                    <a class="nav-link active" aria-current = "page" href = "index.html" title = "Home page">Home</a>
+                </span>
+                <a class= "nav-link" href = "about.html" title = "About page">About</a>
+                <a class= "nav-link" href = "product.html" title = "Product page">Product</a>
+                <a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a>
+                <a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a>
             </div>
         </div>
     </nav>
 
     <!-- Beginning -->
     <section class="startsec row">
-        <div class = "col-lg-7 order-2 pt-5">
-            <p class = "startsectag">
-                    <span style="font-size:0.9em;background-color:#eff0f2;">We Care For&nbsp;</span>
+        <div class = "col-lg-6 order-2">
+            <p class = "startsectag float-none d-flex" style = "flex-direction: column;">
+                <span class = "startText">
+                    <span class = "pb-2" style="font-size:0.9em;background-color:#eff0f2;">We Care For&nbsp;</span><br>
                     <span class="highlight" style="font-size:1.2em;color:#002502;background-color:#eff0f2;"> 
                         OUR COMMUNITY
-                    </span> 
+                    </span><br>
                     <span style="font-size:1em;background-color:#eff0f2;">&nbsp;Es Hora De Comer</span>
+                </span>
             </p>
-            <span class = "px-4 py-2" style = "background-color:#f7f4f4;color:#004403;font-size: xx-large;font-weight:bolder;">
+            <span class = "py-2" style = "background-color:#f7f4f4;color:#004403;font-size: xx-large;font-weight:bolder;">
                 Inspired to cook something new?
             </span>
             <div class = "searchBar row d-flex pt-3 pe-5" style = "flex-wrap: nowrap;">
@@ -95,10 +95,8 @@
                 </a>
             </span>
         </div>  
-        <div class="startsecimg col-lg-5 order-1 py-4 ps-5">
-            <img src = "assets/leavelyshopping.png" height="550px" alt = "shopping online">
-        </div>
-
+        <div class="startsecimg col-lg-6 order-1 py-5 ps-5 d-none d-lg-block">
+            <img src = "assets/leavelyshopping.png" class = "img-fluid" alt = "shopping online">
         </div>
     </section>
     <!-- Welcome phrase -->
@@ -154,7 +152,7 @@
                     </p>
                 </div>
                 <div class = "sec2img col-md-6">
-                    <img src = "assets/undraw_add_to_cart_vkjp.png" height="350px">
+                    <img src = "assets/undraw_add_to_cart_vkjp.png" class = "img-fluid">
                 </div>
         </section>
 
@@ -170,7 +168,7 @@
                     </p>
                 </div>
                 <div class = "col-md-7 sec3img order-1">
-                    <img src = "assets/undraw_discount_d4bd.png" height="350px">
+                    <img src = "assets/undraw_discount_d4bd.png" class = "img-fluid">
                 </div>
         </section>
 
@@ -184,7 +182,7 @@
             </p>
                 <div class = "col-lg-3">
                     <div class="card">
-                        <img src="assets/burger.png" class="card-img-top" alt="Burger">
+                        <img src="assets/burger.png" class="card-img-top img-fluid" alt="Burger">
                         <div class="card-body">
                             <h5 class="card-title">Gordon's 10 Millionth Youtube Subscriber Burger</h5>
                             <p class="card-text">"Gordon's just hit 10 Million Subscribers on YouTube and to celebrate, he's making the perfect burger for the grill...with a few tricks!"</p>
@@ -195,7 +193,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="card">
-                        <img src="assets/Curry Potatoes.png" class="card-img-top" alt="Curry Potatoes">
+                        <img src="assets/Curry Potatoes.png" class="card-img-top img-fluid" alt="Curry Potatoes">
                         <div class="card-body">
                             <h5 class="card-title">Little Chef Naia’s Braised Curry Potatoes</h5>
                             <p class="card-text">"Delicious braised curry potatoes from 2015 Little Chef winner Naia! Make these at home with your own Little Chefs—have some fun in the kitchen!"</p>
@@ -206,7 +204,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="card">
-                        <img src="assets/brownie.png" class="card-img-top" alt="Brownie">
+                        <img src="assets/brownie.png" class="card-img-top img-fluid" alt="Brownie">
                         <div class="card-body">
                             <h5 class="card-title">Instant Pot Brownie</h5>
                             <p class="card-text">"I had so much fun trying to bake these dessert recipes in an Instant Pot for the first time ever! I can't believe how well this worked after a little trial and error."</p>
@@ -217,7 +215,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="card">
-                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5265636.jpg" class="card-img-top" alt="Vietnamese Fresh Spring Rolls">
+                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5265636.jpg" class="card-img-top img-fluid" alt="Vietnamese Fresh Spring Rolls">
                         <div class="card-body">
                             <h5 class="card-title">Vietnamese Fresh Spring Rolls</h5>
                             <p class="card-text">"These spring rolls are a refreshing change from the usual fried variety, and have become a family favorite. They are great as a cool summertime appetizer, and are delicious dipped in one or both of the sauces."</p>

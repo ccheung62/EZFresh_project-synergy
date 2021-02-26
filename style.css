@@ -61,23 +61,46 @@ body{
 .startsectag{
     display: flex;
     flex-wrap:wrap;
-    font-size:x-large;
+    font-size:small;
     align-content: center;
-    padding-right: 33%;
-    padding-top: 7%;
-    padding-bottom: 5%;
-    padding-left: 27%;
+    padding-right: 33%; /*33*/
+    padding-top: 12%;
+    padding-bottom: 10%;
+    padding-left: 23%; /*27*/
     background-image: url(assets/framed-price-tag.png);
     background-repeat: no-repeat;
     background-position:center;
     background-size:contain;
 }
-.startsectag span{
-    padding: 8px 0;
-}
 .startsecimg{
     display:flex;
     justify-content: center;
+}
+/* Change font-size for "We Care for Our Community" */
+@media (min-width: 375px){
+    .startText{
+        font-size:medium;
+    }
+}
+@media (min-width: 576px){
+    .startText{
+        font-size:x-large;
+    }
+}
+@media (min-width: 768px){
+    .startText{
+        font-size:xx-large;
+    }
+}
+@media (min-width: 992px){
+    .startText{
+        font-size:large;
+    }
+}
+@media (min-width: 1200px){
+    .startText{
+        font-size:x-large;
+    }
 }
 
 /* Change color for different action handlers */
@@ -98,6 +121,11 @@ body{
 }
 .btn:focus{
     box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important; 
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important;
 }
 
 /* The welcome phrase */
