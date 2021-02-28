@@ -1,0 +1,1 @@
+<INPUT TYPE="BUTTON" ONCLICK="alert('XSS')"/>
