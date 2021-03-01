@@ -42,6 +42,7 @@ body{
     text-decoration: none;
     font-size: 1.5em; 
     color:#004403 !important;
+    letter-spacing: 2px;
 }
 
 /* The body of the home page */
@@ -137,32 +138,6 @@ body{
     box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important;
 }
 
-/* The welcome phrase */
-/* .welcome{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.welcome p{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1.1em;
-    background-image: url(assets/green-leave-frame.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 8px 0;
-}
-.goldenleaf{
-    background-image: url(assets/combine-fruits.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
-    padding-top: 10%;
-    padding-bottom: 5%;
-} */
-
 /* Section 1 */
 .icon{
     font-family: 'ABeeZee', 'Montserrat', sans-serif;
@@ -235,5 +210,12 @@ body{
     display:flex;
     flex-direction:column;
     color:#004403;
+}
+hr.footerLine{
+    display:block;
+    border:none;
+    width:40%;
+    border-top:2px solid #5DB66D;
+    margin-top:0rem;
 }
 
