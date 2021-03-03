@@ -2,34 +2,163 @@
 <html lang=en>
 <head>
     <meta charset = "utf-8"/>
-    <title>EZFresh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description of EZ Fresh -->
+    <title>EZ Fresh。About Page</title>
+    <meta name="description" content="Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
+    convenience of ordering takeout">
+    <!-- Social Media description -->
+    <meta property="og:type" content = "website">
+    <meta property="og:url" content = "https://ccheung62.github.io/EZFresh_project-synergy/">
+    <meta property="og:title" content = "EZ Fresh。About Page">
+    <meta property="og:description" content = "Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
+    convenience of ordering takeout">
+    <meta property="og:image" content = "https://ccheung62.github.io/EZFresh_project-synergy/assets/logo.png">
+    <!-- Fonts from Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel= "icon" href = "assets/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous">    
+    <!-- Favicon -->
+    <link rel= "icon" href = "assets/circle-icon.png">
     <link rel= "stylesheet" href = "style.css">
     <script src= "script.js"></script>
+    <!-- Script from CSS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+        crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-   <div class="container">
-       <div class="nav-wrapper">
-            <div class="brand">
-                <a href = "index.html"><img src = "assets/icon.png" height = 30px><i>EZ</i>Fresh</a>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top py-3 px-5 container-fluid">
+        <a class = "navbar-brand" href = "index.html" title="Home page">
+            <img src = "assets/icon.png" height = 40px alt="EZ Fresh icon">
+            <i>EZ </i>Fresh
+        </a>
+        <!-- toggler when the screen size decrease -->
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarCollapse" 
+            aria-controls="navbarCollapse" 
+            aria-expanded="false"
+            aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id = "navbarCollapse">
+            <div class="navbar-nav ms-auto mb-2 mb-md-0">
+                <a class="nav-link active" aria-current = "page" href = "index.html" title = "Home page">Home</a>
+                <span class = "active-nav-link">
+                    <a class= "nav-link" href = "about.html" title = "About page">About</a>
+                </span>
+                <a class= "nav-link" href = "product.html" title = "Product page">Product</a>
+                <a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a>
+                <a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a>
             </div>
-           <div class="nav-link-wrapper">
-                <a href = "index.html">Home</a>
-           </div>
-           <div class="nav-link-wrapper active-nav-link">
-                <a href = "about.html">About</a>
-           </div>
-           <div class="nav-link-wrapper">
-                <a href = "product.html">Product</a>
-                <a href = "faq.html">FAQ</a>
-                <a href = "contact.html">Contact Us</a>
-           </div>
-       </div>
-   </div>
+        </div>
+    </nav>
 
+    <!-- Opening -->
+    <section class = "startsec row pt-5" >
+        <span class = "col-lg-6 pt-5" style = "display:flex;align-content:center">
+            <span class = "startText startsectag aboutsectag float-none d-flex">
+                <span style = "flex-direction:row;">
+                    <p class = "heading" style = "font-size: 0.9em;margin-bottom:0.5rem">About Us</p>
+                    <hr class = "ms-1" style = "width:150%;margin:0.5rem">
+                </span>
+                <p style = "font-size:0.6em;">Trying to know more about EZ Fresh as a company? You have come to the right place!</p>
+                <ul class = "ps-5" style = "font-size:0.8em">
+                    <li><a class = "prettyLink" href = "#aboutStory" title = "Jump to Our Story">Our Story</a></li>
+                    <li><a class = "prettyLink" href = "#whyEZFresh" title = "Jump to Why EZ Fresh">Why EZ Fresh?</a></li>
+                    <li><a class = "prettyLink" href = "#aboutTeam" title = "Jump to Our Team">Our Team</a></li>
+                </ul>
+            </span>
+        </span>
+        <span class = "col-md-6 pt-5 d-none d-lg-block">
+            <img class = "img-fluid" src = "assets/undraw_team_spirit_hrr4.png">
+        </span>
+    </section>
+
+    <div class = "container">
+        <!-- Story -->
+        <section id = "aboutStory" class = "pt-5">
+            <p class = "heading">Our Story</p>
+        </section>
+
+        <!-- Why EZ Fresh? -->
+        <section id = "whyEZFresh">
+
+        </section>
+
+        <!-- Team -->
+        <section id = "aboutTeam">
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class = "endFooter mt-4">
+        <div class="row">
+            <div class = "col-md-6 py-4">
+                <p class = "p-2 d-flex" style="background-color:#569c58;justify-content:space-evenly;">
+                    Follow us on social media!
+                    <span>
+                        <a class = "px-2" href = "" ><img src = "assets/facebook-icon.png" height=30px title = "EZ Fresh。Facebook"></a>
+                        <a class = "px-2" href = ""><img src = "assets/twitter-icon.png" height=30px title = "EZ Fresh。Twitter"></a>
+                        <a class = "px-2" href = ""><img src = "assets/instagram-icon.png" height=30px title = "EZ Fresh。Instagram"></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="row px-5 pb-5">
+            <div class = "col-md-3 mb-2">
+                <p class = "heading" style = "color:#444444;margin-bottom:0.5rem;">
+                    EZ Fresh
+                </p><hr class = "ms-2">
+                <p class="pe-2" style="font-size:0.9em;color:#013803">
+                    Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
+                    convenience of ordering takeout
+                </p>
+            </div>
+            <div class="col-md-3 mb-2">
+                <p class = "heading" style = "color:#4e4c4c;font-size:1.5em;margin-bottom:0.5rem;">
+                    Learn More
+                </p><hr class = "ms-2">
+                <ul class = "footercol" style = "list-style-type:none; padding:0px">
+                    <li><a class = "prettyLink" href = "about.html" title = "About page">Our Story</a></li>
+                    <li><a class = "prettyLink" href = "product.html" title = "Product page">Our Service</a></li>
+                    <li><a class = "prettyLink" href = "faq.html" title = "FAQ">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-2">
+                <p class="heading" style = "color:#4e4c4c;font-size:1.5em;margin-bottom:0.5rem;">
+                    Resources
+                </p><hr class = "ms-2">
+                <ul class = "footercol" style = "list-style-type:none; padding:0px">
+                    <li><a class = "prettyLink d-inline-flex" href = "index.html" title = "Home page">Manage Your Account</a></li>
+                    <li><a class = "prettyLink" href = "contact.html" title = "Contact page">Careers- Come Work with Us</a></li>
+                    <li><a class = "prettyLink" href = "contact.html" title = "Contact page">Partner with Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-2">
+                <p class = "heading" style = "color:#4e4c4c;font-size:1.5em;margin-bottom:0.5rem;">
+                    Contact Us
+                </p><hr class = "ms-2">
+                <p class = "footercol">
+                    New York, NY, 10012, US<br>
+                    help@ezfresh.com<br>
+                    +1 800-777-7777
+                </p>
+            </div>
+            <span class = "row pt-3" style = "display:flex;justify-content:center;color:#4e4c4c;font-size:0.8em">© 2021 Copyright : EZ Fresh</span>  
+        </div>
+    </footer>
 </body>
 
 </html>
