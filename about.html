@@ -35,7 +35,7 @@
 
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-3 px-5 container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 px-5 container-fluid">
         <a class = "navbar-brand" href = "index.html" title="Home page">
             <img src = "assets/icon.png" height = 40px alt="EZ Fresh icon">
             <i>EZ </i>Fresh
@@ -52,29 +52,40 @@
                 <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id = "navbarCollapse">
-            <div class="navbar-nav ms-auto mb-2 mb-md-0">
-                <a class="nav-link active" aria-current = "page" href = "index.html" title = "Home page">Home</a>
-                <span class = "active-nav-link">
-                    <a class= "nav-link" href = "about.html" title = "About page">About</a>
-                </span>
-                <a class= "nav-link" href = "product.html" title = "Product page">Product</a>
-                <a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a>
-                <a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a>
-            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class = "nav-item"><a class="nav-link" href = "index.html" title = "Home page">Home</a></li>
+                <li class = "nav-item dropdown">
+                    <a class= "nav-link dropdown-toggle active-nav-link" 
+                    href = "about.html" 
+                    title = "About page" 
+                    id = "navAboutDropMenu" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false">About</a>
+                    <ul class="dropdown-menu" aria-labelledby="navAboutDropMenu">
+                        <li><a class="dropdown-item" href="about.html#aboutMission">Our Mission</a></li>
+                        <li><a class="dropdown-item" href="about.html#whyEZFresh">Why EZ Fresh?</a></li>
+                        <li><a class="dropdown-item" href="about.html#aboutTeam">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class = "nav-item"><a class= "nav-link" href = "product.html" title = "Product page">Product</a></li>
+                <li class = "nav-item"><a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a></li>
+                <li class = "nav-item"><a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a></li>
+                <button class = "btn me-3">Sign Up</button>
+            </ul>
         </div>
     </nav>
 
     <!-- Opening -->
-    <section class = "startsec row pt-5" >
+    <!-- <section class = "startsec row pt-5" >
         <span class = "col-lg-6 pt-5" style = "display:flex;align-content:center">
             <span class = "startText startsectag aboutsectag float-none d-flex">
                 <span style = "flex-direction:row;">
                     <p class = "heading" style = "font-size: 0.9em;margin-bottom:0.5rem">About Us</p>
                     <hr class = "ms-1" style = "width:150%;margin:0.5rem">
                 </span>
-                <p style = "font-size:0.6em;">Trying to know more about EZ Fresh as a company? You have come to the right place!</p>
+                <p style = "font-size:0.6em;">Want to know more about EZ Fresh as a company?</p>
                 <ul class = "ps-5" style = "font-size:0.8em">
-                    <li><a class = "prettyLink" href = "#aboutStory" title = "Jump to Our Story">Our Story</a></li>
+                    <li><a class = "prettyLink" href = "#aboutMission" title = "Jump to Our Mission">Our Mission</a></li>
                     <li><a class = "prettyLink" href = "#whyEZFresh" title = "Jump to Why EZ Fresh">Why EZ Fresh?</a></li>
                     <li><a class = "prettyLink" href = "#aboutTeam" title = "Jump to Our Team">Our Team</a></li>
                 </ul>
@@ -83,22 +94,110 @@
         <span class = "col-md-6 pt-5 d-none d-lg-block">
             <img class = "img-fluid" src = "assets/undraw_team_spirit_hrr4.png">
         </span>
+    </section> -->
+    <div class = "container pb-5">
+        <!-- Mission -->
+    <section id = "aboutMission" class = "row">
+            <!-- <div class="row pt-5">
+                <span class = "col-md-6 pt-5" style = "display:flex;align-content:center;flex-direction: column;">
+                    <span class = "heading startText startsectag titlesectag float-none d-flex">Our Mission</span>
+                    <p> 
+                        EZFresh was founded by a group of Diverse Influencers Fellows on February 3, 2021 with the idea of <span style = "color:#4eb861">making grocery shopping 
+                        convenient for our community</span>. Since the pandemic, we realized that vulnerable groups such as elderly people had difficulties obtaining   
+                        groceries and food. Therefore, to <span style = "color:#4eb861">maintain social distancing and help maintain low COVID cases</span>; we decided to build a <span class = "highlight">more affordable, day-to-day grocery 
+                        shopping delivery system</span>. Now, you can schedule our services and our team will make sure you and your love ones live healthy and safely. 
+                    </p>
+                </span>
+                <div class = "secimg col-md-6">
+                    <img class = "img-fluid" src = "assets/undraw_drone_delivery_5vrm.png">
+                </div>
+            </div> -->
+        <span class = "pt-5 ps-3">
+            <span class = "startText startsectag parasectag">
+                <p class = "heading pb-2" style = "background-color:#eef1ed;">Our <span class = "highlight">Mission</span></p>
+                <p style = "margin-bottom:0.5rem;background-color:#eef1ed;">
+                    EZFresh was founded by a group of Diverse Influencers Fellows after the pandemic with the idea of
+                    <ul style = "margin-bottom:0.5rem;">
+                        <li>making grocery shopping <span style = "color:#4eb861">convenient and safe for our community</span></li>
+                        <li><span style = "color:#4eb861">helping vulnerable groups</span>, such as the elderly and disabled, get their groceries and food to eat healthy.</li>
+                        <li>maintaining <span style = "color:#4eb861">social distancing within supermarkets</span> and low COVID cases</li>
+                    </ul> 
+                    <span style = "background-color:#eef1ed;">
+                        So, we decided to build a more affordable, day-to-day grocery 
+                        shopping delivery system. Now, you can schedule our services and our team will make sure you and 
+                        your love ones live and eat healthy. 
+                    </span>
+                </p>
+            </span>
+        </span>
+        <!-- <div class = "secimg col-md-5 d-none d-lg-flex pt-5 ps-5" style = "padding-top:120px;">
+            <img class = "img-fluid" src = "assets/undraw_gradma_wanr.png">
+        </div> -->
     </section>
-
-    <div class = "container">
-        <!-- Story -->
-        <section id = "aboutStory" class = "pt-5">
-            <p class = "heading">Our Story</p>
-        </section>
-
         <!-- Why EZ Fresh? -->
-        <section id = "whyEZFresh">
-
+        <section id = "whyEZFresh" class = "row pt-5">
+            <p class = "heading">Why <span class = "highlight">EZ Fresh</span>?</p>
+            <span class = "col-md-6 order-2">
+                <p>
+                    EZFresh is <span style = "color:#4eb861">affordable</span> and <span style = "color:#4eb861">convenient</span>. 
+                    <ul>
+                        <li>With our services, you don’t have to worry about moving your schedule around to get the best breakfast, lunch, or dinner.</li>
+                        <li>Shop from <span style = "color:#4eb861"> local supermarkets</span> you know and love while supporting your community!</li>
+                        <li>Buy from however many supermarkets you want for the <span style = "color:#4eb861">best price and quality without the carrying and traveling</span>!</li>
+                        <li>This is a service for everyone! If you can't figure out how to order online, you can <span style = "color:#4eb861">contact us through customer services</span>. Doesn't matter how early or late it is, our team will 
+                            be eager to help you or order for you!</li>
+                        <li>Chiefs of different experiences and cultures can <span style = "color:#4eb861">promote their recipes</span> to the world and enhance healthier eating!</li>
+                    </ul>
+                    It’s affordable, 
+                    efficient, and reliant. Go <span style = "color:#4eb861">EZ</span> on your groceries, go <span style = "color:#4eb861">FRESH</span> with your ingredients!
+                </p>
+            </span>
+            <div class = "col-md-6 order-1">
+                <img class = "img-fluid" src = "assets/undraw_celebration_0jvk.png">
+            </div>
         </section>
 
         <!-- Team -->
         <section id = "aboutTeam">
-
+            <p class = "heading pt-5" style = "text-align: center;">Meet Our Founders, Meet Our <span class = "highlight">Team</span></p>
+            <div class="row row-cols-md-3 row-cols-1">
+                <div class="col">
+                    <div class="card p-1" style = "background-color: transparent;border: transparent">
+                        <a href = "https://www.linkedin.com/in/cheuk-lam-cheung/" title = "LinkedIn。Cheuk Lam Cheung" target = "_blank"><img src="assets/Cheuk.jpg" class="card-img-top img-fluid mx-auto" style = "max-width: 180px" alt="Cheuk Lam Cheung"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Cheuk Lam Cheung  
+                                <a href = "https://www.linkedin.com/in/cheuk-lam-cheung/" title = "LinkedIn。Cheuk Lam Cheung" target = "_blank"><img class = "img-fluid smicon" src = "assets/linkedin-icon.png" style = "max-width:30px;"></a>
+                            </h5><hr class = "px-3" style = "width:60%">
+                            <p>Lead Website Developer</p>
+                            <p class="card-text">"EZ Fresh lets you shop from 10 different supermarkets for the perfect ingredients without guilt."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-1" style = "background-color: transparent;border: transparent">
+                        <a href = "https://www.linkedin.com/in/kaylawong1/" title = "LinkedIn。Kayla Wong" target = "_blank"><img src="assets/Kayla.jpg" class="card-img-top img-fluid mx-auto" style = "max-width: 180px" alt="Kayla Wong"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Kayla Wong  
+                                <a href = "https://www.linkedin.com/in/kaylawong1/" title = "LinkedIn。Kayla Wong" target = "_blank"><img class = "img-fluid smicon" src = "assets/linkedin-icon.png" style = "max-width:30px;"></a>
+                            </h5><hr class = "px-3" style = "width:60%">
+                            <p>Entrepreneur</p>
+                            <p class="card-text">"A healthy lifestyle starts with eating real, whole foods. Let’s bring it to your door!"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card p-1" style = "background-color: transparent;border: transparent">
+                        <a href = "https://www.linkedin.com/in/brianna-gonzalez-8331261ba/" title = "LinkedIn。Brianna Gonzalez" target = "_blank"><img src="assets/Brianna.jpg" class="card-img-top img-fluid mx-auto" style = "max-width: 180px" alt="Brianna Gonzalez"></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Brianna Gonzalez  
+                                <a href = "https://www.linkedin.com/in/brianna-gonzalez-8331261ba/" title = "LinkedIn。Brianna Gonzalez" target = "_blank"><img class = "img-fluid smicon" src = "assets/linkedin-icon.png" style = "max-width:30px;"></a>
+                            </h5><hr class = "px-3" style = "width:60%">
+                            <p>Website Designer</p>
+                            <p class="card-text">“I believe in affordability and easy access for the community. EZFresh represents this with its entirety.”  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -109,9 +208,9 @@
                 <p class = "p-2 d-flex" style="background-color:#569c58;justify-content:space-evenly;">
                     Follow us on social media!
                     <span>
-                        <a class = "px-2" href = "" ><img src = "assets/facebook-icon.png" height=30px title = "EZ Fresh。Facebook"></a>
-                        <a class = "px-2" href = ""><img src = "assets/twitter-icon.png" height=30px title = "EZ Fresh。Twitter"></a>
-                        <a class = "px-2" href = ""><img src = "assets/instagram-icon.png" height=30px title = "EZ Fresh。Instagram"></a>
+                        <a class = "px-2" href = "" ><img class = "smicon" src = "assets/facebook-icon.png" height=30px title = "EZ Fresh。Facebook"></a>
+                        <a class = "px-2" href = ""><img class = "smicon" src = "assets/twitter-icon.png" height=30px title = "EZ Fresh。Twitter"></a>
+                        <a class = "px-2" href = ""><img class = "smicon" src = "assets/instagram-icon.png" height=30px title = "EZ Fresh。Instagram"></a>
                     </span>
                 </p>
             </div>
@@ -131,7 +230,7 @@
                     Learn More
                 </p><hr class = "ms-2">
                 <ul class = "footercol" style = "list-style-type:none; padding:0px">
-                    <li><a class = "prettyLink" href = "about.html" title = "About page">Our Story</a></li>
+                    <li><a class = "prettyLink" href = "about.html" title = "About page">Our Mission</a></li>
                     <li><a class = "prettyLink" href = "product.html" title = "Product page">Our Service</a></li>
                     <li><a class = "prettyLink" href = "faq.html" title = "FAQ">Frequently Asked Questions</a></li>
                 </ul>

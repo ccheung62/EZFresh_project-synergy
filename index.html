@@ -36,7 +36,7 @@
 <body>
     
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top py-3 px-5 container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 px-5 container-fluid">
         <a class = "navbar-brand" href = "index.html" title="Home page">
             <img src = "assets/icon.png" height = 40px alt="EZ Fresh icon">
             <i>EZ </i>Fresh
@@ -53,28 +53,41 @@
                 <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id = "navbarCollapse">
-            <div class="navbar-nav ms-auto mb-2 mb-md-0">
-                <span class = "active-nav-link">
-                    <a class="nav-link active" aria-current = "page" href = "index.html" title = "Home page">Home</a>
-                </span>
-                <a class= "nav-link" href = "about.html" title = "About page">About</a>
-                <a class= "nav-link" href = "product.html" title = "Product page">Product</a>
-                <a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a>
-                <a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a>
-            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class = "nav-item">
+                    <a class="nav-link active-nav-link " href = "index.html" title = "Home page">Home</a>
+                </li>
+                <li class = "nav-item dropdown">
+                    <a class= "nav-link dropdown-toggle" 
+                    href = "about.html" 
+                    title = "About page" 
+                    id = "navAboutDropMenu" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false">About</a>
+                    <ul class="dropdown-menu" aria-labelledby="navAboutDropMenu">
+                        <li><a class="dropdown-item" href="about.html#aboutMission">Our Mission</a></li>
+                        <li><a class="dropdown-item" href="about.html#whyEZFresh">Why EZ Fresh?</a></li>
+                        <li><a class="dropdown-item" href="about.html#aboutTeam">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class = "nav-item"><a class= "nav-link" href = "product.html" title = "Product page">Product</a></li>
+                <li class = "nav-item"><a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a></li>
+                <li class = "nav-item"><a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a></li>
+                <button class = "btn me-3">Sign Up</button>
+            </ul>
         </div>
     </nav>
 
     <!-- Beginning -->
     <section class="startsec row">
-        <div class = "col-lg-6 pt-5 order-2">
-            <p class = "startsectag float-none d-flex" style = "flex-direction: column;margin:0px">
+        <div class = "col-lg-6 order-2">
+            <p class = "startsectag">
                 <span class = "startText">
-                    <span class = "pb-2" style="font-size:0.9em;background-color:#f0ebeb;">We Care For&nbsp;</span><br>
-                    <span class="highlight" style="font-size:1.2em;color:#002502;background-color:#f0ebeb;"> 
+                    <span style="font-size:0.9em;background-color:#eef1ed;">We Care For&nbsp;</span><br>
+                    <span class="highlight" style="font-size:1.2em;color:#002502;background-color:#eef1ed;"> 
                         OUR COMMUNITY
                     </span><br>
-                    <span style="font-size:1em;background-color:#f0ebeb;">&nbsp;Es Hora De Comer</span>
+                    <span class = "mt-5" style="font-size:1em;background-color:#eef1ed;">&nbsp;Es Hora De Comer</span>
                 </span>
             </p>
             <span class = "ms-2 py-2" style = "background-color:#f7f4f4;color:#004403;font-size: xx-large;font-weight:bolder;">
@@ -90,8 +103,8 @@
                 </div>
             </div>
             <span class = "pt-3 me-5" style="display:flex;justify-content: flex-end; text-decoration: none">
-                <a href="#redirectrecipe" class = "prettyLink" style = "background-color:#f7f4f4;" title = "Jump to Weekly Recipe Haul">
-                    Still unsure? Check out our&nbsp;<span style = "color:#4eb861">weekly recipe haul</span>
+                <a href="#redirectrecipe" class = "prettyLink" style = "background-color:#f7f4f4; border:transparent!important" title = "Jump to Weekly Recipe Haul">
+                    Still unsure? Check out our&nbsp;<span style = "color:#4eb861">weekly recipe haul</span> <span style = "font-size:1.5em;">&nbsp;➤</span>
                 </a>
             </span>
         </div>  
@@ -171,7 +184,7 @@
                         in mind. We believe that keeping the vulnerable population safe and the health of our community is our #1 Priority. 
                     </p>
                 </div>
-                <div class = "sec2img col-md-6">
+                <div class = "secimg col-md-6">
                     <img src = "assets/undraw_add_to_cart_vkjp.png" class = "img-fluid">
                 </div>
         </section>
@@ -187,7 +200,7 @@
                         That’s right! For your first purchase, enter code EZFRESHHURAH&lt;3 and get a <span id = "redirectrecipe" style = "color:#4eb861">50% discount</span> off your order. AMAZINGLY DELICIOUS! 
                     </p>
                 </div>
-                <div class = "col-md-6 sec3img order-1">
+                <div class = "col-md-6 secimg order-1">
                     <img src = "assets/undraw_discount_d4bd.png" class = "img-fluid">
                 </div>
         </section>
@@ -200,50 +213,52 @@
             <p class = "caption" style = "display:flex;justify-content:center;align-items: center;">
                 Want to be inspired? Check out this weeks featured recipes!
             </p>
-                <div class = "col-lg-3">
-                    <div class="card">
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+                <div class = "col">
+                    <div class="card p-1">
                         <img src="assets/burger.png" class="card-img-top img-fluid" alt="Burger">
                         <div class="card-body">
-                            <h5 class="card-title">Gordon's 10 Millionth Youtube Subscriber Burger</h5>
+                            <h5 class="card-title">Gordon's 10 Millionth Youtube Subscriber Burger</h5><hr class = "px-3" style = "width:60%">
                             <p class="card-text">"Gordon's just hit 10 Million Subscribers on YouTube and to celebrate, he's making the perfect burger for the grill...with a few tricks!"</p>
                             <p class ="recipeCredit">from Gordon Ramsay</p>
-                            <a href="https://www.gordonramsay.com/gr/recipes/gr10million/" class="btn" target = "_blank" title = "Gordon's 10 Millionth Youtube Subscriber Burger">See recipe & ingredients</a>
+                            <a href="https://www.gordonramsay.com/gr/recipes/gr10million/" class="btn" target = "_blank" title = "Gordon's 10 Millionth Youtube Subscriber Burger">Tell me more!</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card">
+                <div class="col">
+                    <div class="card p-1">
                         <img src="assets/Curry Potatoes.png" class="card-img-top img-fluid" alt="Curry Potatoes">
                         <div class="card-body">
-                            <h5 class="card-title">Little Chef Naia’s Braised Curry Potatoes</h5>
+                            <h5 class="card-title">Little Chef Naia’s Braised Curry Potatoes</h5><hr class = "px-3" style = "width:60%">
                             <p class="card-text">"Delicious braised curry potatoes from 2015 Little Chef winner Naia! Make these at home with your own Little Chefs—have some fun in the kitchen!"</p>
                             <p class ="recipeCredit">from Little Chef Naia</p>
-                            <a href="https://www.littlepotatoes.com/recipes/little-chef-naias-braised-curry-potatoes/" class="btn" target = "_blank" title = "Little Chef Naia’s Braised Curry Potatoes">See recipe & ingredients</a>
+                            <a href="https://www.littlepotatoes.com/recipes/little-chef-naias-braised-curry-potatoes/" class="btn" target = "_blank" title = "Little Chef Naia’s Braised Curry Potatoes">Tell me more!</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card">
+                <div class="col">
+                    <div class="card p-1">
                         <img src="assets/brownie.png" class="card-img-top img-fluid" alt="Brownie">
                         <div class="card-body">
-                            <h5 class="card-title">Instant Pot Brownie</h5>
+                            <h5 class="card-title">Instant Pot Brownie</h5><hr class = "px-3" style = "width:60%">
                             <p class="card-text">"I had so much fun trying to bake these dessert recipes in an Instant Pot for the first time ever! I can't believe how well this worked after a little trial and error."</p>
                             <p class ="recipeCredit">from Rosanna Pansion</p>
-                            <a href="https://rosannapansino.com/blogs/recipes/instant-pot-brownie" class="btn" target = "_blank" title = "Instant Pot Brownie">See recipe & ingredients</a>
+                            <a href="https://rosannapansino.com/blogs/recipes/instant-pot-brownie" class="btn" target = "_blank" title = "Instant Pot Brownie">Tell me more!</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card">
-                        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5265636.jpg" class="card-img-top img-fluid" alt="Vietnamese Fresh Spring Rolls">
+                <div class="col">
+                    <div class="card p-1">
+                        <img src="assets/spring-roll.jpeg" class="card-img-top img-fluid" alt="Vietnamese Fresh Spring Rolls">
                         <div class="card-body">
-                            <h5 class="card-title">Vietnamese Fresh Spring Rolls</h5>
+                            <h5 class="card-title">Vietnamese Fresh Spring Rolls</h5><hr class = "px-3" style = "width:60%">
                             <p class="card-text">"These spring rolls are a refreshing change from the usual fried variety, and have become a family favorite. They are great as a cool summertime appetizer, and are delicious dipped in one or both of the sauces."</p>
                             <p class ="recipeCredit">from Anonymous</p>
-                            <a href="https://www.allrecipes.com/recipe/24239/vietnamese-fresh-spring-rolls/" target = "_blank" class="btn" title = "Vietnamese Fresh Spring Rolls">See recipe & ingredients</a>
+                            <a href="https://www.allrecipes.com/recipe/24239/vietnamese-fresh-spring-rolls/" target = "_blank" class="btn" title = "Vietnamese Fresh Spring Rolls">Tell me more!</a>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
     </div>
 
@@ -254,9 +269,9 @@
                 <p class = "p-2 d-flex" style="background-color:#569c58;justify-content:space-evenly;">
                     Follow us on social media!
                     <span>
-                        <a class = "px-2" href = "" ><img src = "assets/facebook-icon.png" height=30px title = "EZ Fresh。Facebook"></a>
-                        <a class = "px-2" href = ""><img src = "assets/twitter-icon.png" height=30px title = "EZ Fresh。Twitter"></a>
-                        <a class = "px-2" href = ""><img src = "assets/instagram-icon.png" height=30px title = "EZ Fresh。Instagram"></a>
+                        <a class = "px-2" href = "" ><img class = "smicon" src = "assets/facebook-icon.png" height=30px title = "EZ Fresh。Facebook"></a>
+                        <a class = "px-2" href = ""><img class = "smicon" src = "assets/twitter-icon.png" height=30px title = "EZ Fresh。Twitter"></a>
+                        <a class = "px-2" href = ""><img class = "smicon" src = "assets/instagram-icon.png" height=30px title = "EZ Fresh。Instagram"></a>
                     </span>
                 </p>
             </div>
@@ -276,7 +291,7 @@
                     Learn More
                 </p><hr class = "ms-2">
                 <ul class = "footercol" style = "list-style-type:none; padding:0px">
-                    <li><a class = "prettyLink" href = "about.html" title = "About page">Our Story</a></li>
+                    <li><a class = "prettyLink" href = "about.html" title = "About page">Our Mission</a></li>
                     <li><a class = "prettyLink" href = "product.html" title = "Product page">Our Service</a></li>
                     <li><a class = "prettyLink" href = "faq.html" title = "FAQ">Frequently Asked Questions</a></li>
                 </ul>
