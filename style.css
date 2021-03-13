@@ -180,7 +180,7 @@ body{
     padding:0.5rem 1rem;
     font-weight: bold;
     letter-spacing:1px;
-    background-color:#d3d8d4;
+    background-color:#c0d1c0;
     border-radius: 1.5rem 0rem 1.5rem 0rem;
     border: 5px solid #e6e9e6;
 }
@@ -214,7 +214,7 @@ body{
 hr{
     display:block;
     border:none;
-    width:40%;
+    width:60%;
     border-top:2px solid #5DB66D;
     margin-top:0rem;
 }
