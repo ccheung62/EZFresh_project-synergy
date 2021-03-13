@@ -182,6 +182,7 @@ body{
     letter-spacing:1px;
     background-color:#d3d8d4;
     border-radius: 1.5rem 0rem 1.5rem 0rem;
+    border: 5px solid #e6e9e6;
 }
 
 /* General CSS */
