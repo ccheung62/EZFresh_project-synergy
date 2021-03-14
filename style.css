@@ -69,7 +69,7 @@ body{
     color:#004403 !important;
     letter-spacing: 1px;
 }
-/* Make the navbar clickable when toggled */
+/* Make the dropdown appear on hover */
 .navbar .nav-item .dropdown-menu{ display: none; }
 .navbar .nav-item:hover .dropdown-menu{ display: block; }
 .navbar .nav-item .dropdown-menu{ margin-top:0; }
@@ -113,27 +113,6 @@ body{
 }
 
 /* Weekly Recipe Haul */
-.card{
-    text-align: center;
-    background-color: transparent;
-    border:transparent;
-}
-.card-colored{
-    border: 2px solid rgba(197, 197, 197,0.3);
-    border-radius: 2rem;
-    background-color: rgba(197, 197, 197, 0.1); 
-}
-.card-img-top{
-    border-radius: 50%;
-    border: 5px solid rgba(163, 199, 166, 0.5);
-    background-position: center;
-}
-.card-title{
-    color:#474747;
-}
-.card-text{
-    font-size: 0.9em;
-}
 .recipeCredit{
     font-size:small;
     font-style:italic;
@@ -206,6 +185,30 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.card{
+    text-align: center;
+    background-color: transparent;
+    border:transparent;
+}
+.card-colored{
+    border: 2px solid rgba(197, 197, 197,0.3);
+    border-radius: 2rem;
+    background-color: rgba(197, 197, 197, 0.1); 
+}
+.card-img-top{
+    border-radius: 50%;
+    border: 5px solid rgba(163, 199, 166, 0.5);
+    background-position: center;
+}
+.card-title{
+    color:#474747;
+    font-weight: bold;
+    margin-bottom:0.5rem;
+    font-size:1.1em;
+}
+.card-text{
+    font-size: 0.9em;
 }
 /* The highlight brush stroke */
 .highlight{
