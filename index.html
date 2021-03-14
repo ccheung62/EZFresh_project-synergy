@@ -54,9 +54,7 @@
         </button>
         <div class="collapse navbar-collapse" id = "navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                <li class = "nav-item">
-                    <a class="nav-link active-nav-link " href = "index.html" title = "Home page">Home</a>
-                </li>
+                <li class = "nav-item"><a class="nav-link active-nav-link" href = "index.html" title = "Home page">Home</a></li>
                 <li class = "nav-item dropdown">
                     <a class = "nav-link" href = "about.html" title = "About page">About
                         <span class= "dropdown-toggle" id = "navAboutDropMenu" data-bs-toggle="dropdown" aria-expanded="false"></span>
@@ -87,24 +85,26 @@
                     <span class = "mt-5" style="font-size:1em;background-color:#eef1ed;">Es Hora De Comer</span>
                 </span>
             </p>
-            <span class = "ms-1 py-2" style = "background-color:#f7f4f4;color:#004403;font-size: xx-large;font-weight:bolder;">
+            <div class="mx-2">
                 <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
-                Inspired to cook something new?
-            </span>
-            <div class = "searchBar row d-flex pt-4 pe-5" style = "flex-wrap: nowrap;">
-                <div class = "col-2"></div>
-                <div class = "col-8">
-                    <input class = "form-control" placeholder="Search for Supermarkets near you">
+                <span class = "ms-1 py-2" style = "background-color:#f7f4f4;color:#004403;font-size: xx-large;font-weight:bolder;">
+                    Inspired to cook something new?
+                </span>
+                <div class = "searchBar row d-flex pt-4 pe-5" style = "flex-wrap: nowrap;">
+                    <div class = "col-2"></div>
+                    <div class = "col-8">
+                        <input class = "form-control" placeholder="Search for Supermarkets near you">
+                    </div>
+                    <div class = "col-2">
+                        <button class = "btn mb-3" title = "Search for Supermarkets">Search</button>
+                    </div>
                 </div>
-                <div class = "col-2">
-                    <button class = "btn mb-3" title = "Search for Supermarkets">Search</button>
-                </div>
+                <span class = "pt-3 me-5" style="display:flex;justify-content: flex-end; text-decoration: none">
+                    <a href="#redirectrecipe" class = "prettyLink" style = "background-color:#f7f4f4; border:transparent!important" title = "Jump to Weekly Recipe Haul">
+                        Still unsure? Check out our&nbsp;<span style = "color:#4eb861">weekly recipe haul</span> <span style = "font-size:1.5em;">&nbsp;➤</span>
+                    </a>
+                </span>
             </div>
-            <span class = "pt-3 me-5" style="display:flex;justify-content: flex-end; text-decoration: none">
-                <a href="#redirectrecipe" class = "prettyLink" style = "background-color:#f7f4f4; border:transparent!important" title = "Jump to Weekly Recipe Haul">
-                    Still unsure? Check out our&nbsp;<span style = "color:#4eb861">weekly recipe haul</span> <span style = "font-size:1.5em;">&nbsp;➤</span>
-                </a>
-            </span>
         </div>  
         <div class="secimg col-lg-6 order-1 py-4 ps-5 d-none d-lg-block">
             <img src = "assets/leavelyshopping.png" class = "img-fluid" alt = "shopping online">
@@ -193,13 +193,43 @@
         <section class = "section3 row pt-2">
                 <div class = "caption col-md-6 order-2">
                     <p class = "heading">
-                        Get the <span class = "highlight">Best Services</span>! First purchase, half price!
+                        Get the <span class = "highlight">Best Services</span> With Discounts!
                     </p>
                     <p>
                         We believe everyone deserves high quality, locally-sourced produce delivered to your front door. Our philosophy: Discounts! 
-                        That’s right! For your first purchase, enter code EZFRESHHURAH&lt;3 and get a <span style = "color:#4eb861">50% discount</span> off your order. AMAZINGLY DELICIOUS! 
+                        Join us to see the <span style = "color:#4eb861">exclusive discounts</span> we have from your favorite supermarkets! Want 
+                        to test out the air first? Get <span style = "color:#4eb861">a month free</span> on us! 
                     </p>
-                    <span id = "redirectrecipe"></span>
+                    <div class = "row">
+                        <div class = "col-md-6">
+                            <div class = "card-colored card">
+                                <div class = "card-body">
+                                    <p class = "card-title">Premium Memebership</p><hr>
+                                    <p class = "card-text">
+                                        <ul>
+                                            <li>2% Cash Back on all purchases</li>
+                                            <li>exculsive offers from your favorite supermarkets</li>
+                                        </ul>
+                                    </p>
+                                    <button class = "btn"> Join as Premium</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "caption col-md-6">
+                            <div class = "card-colored card">
+                                <div class = "card-body">
+                                    <p class = "card-title">Sliver Membership</p><hr>
+                                    <p class = "card-text">
+                                        <ul>
+                                            <li>exculsive offers from your favorite supermarkets</li>
+                                        </ul>
+                                    </p>
+                                    <button class = "btn mx-auto"> Join as Sliver</button>
+                                </div>
+                            </div>
+                        </div>
+                        <span id = "redirectrecipe"></span>
+                    </div>
                 </div>
                 <div class = "col-md-6 secimg order-1">
                     <img src = "assets/undraw_discount_d4bd.png" class = "img-fluid">
