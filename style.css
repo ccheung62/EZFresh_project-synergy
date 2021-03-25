@@ -2,7 +2,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     background-color: #eeeeee;
-    /* background-image: linear-gradient(135deg, #eeeeee 0%, #dfdfdf 100%); */
 }
 
 /* Navigation bar on top of every page */
@@ -18,7 +17,7 @@ body{
     position: relative;
     text-align: center;
     margin-right: 16px;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #004403 !important;
     /* border-bottom: 2px solid transparent;
     transition: border-bottom 0.5s; */
@@ -45,10 +44,13 @@ body{
     transform: translate(0, 4px);
 }
 .nav-item{
-    text-align: center;
+    display:inline-flex;
+    flex-direction:column;
+    align-self:center;
+    text-decoration: none !important;
 }
 .active-nav-link{
-    text-decoration: none !important;
+    /* text-decoration: none !important; */
     border-bottom: 2px solid #5DB66D !important;
     color:#5DB66D !important;
 }
@@ -74,6 +76,52 @@ body{
 .navbar .nav-item .dropdown-menu{ display: none; }
 .navbar .nav-item:hover .dropdown-menu{ display: block; }
 .navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+/* Login/Sign Up Form */
+.blurImg{
+    background-image: url(assets/leaves-5643327_1920.png);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.loginForm{
+    height:100vh;
+    font-family: 'ABeeZee', 'Montserrat', sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+}
+.formMsg{
+    text-align: center;
+    margin: 1rem;
+}
+.loginInput{
+    margin:0.5rem;
+    padding:0.5rem;
+    background-color:#f5f5f5;
+    border-radius: 1rem 0rem 1rem 0rem;
+    border: 1px solid #dddddd;
+    transition: all 0.2s;
+    outline:none;
+}
+.loginInput:focus{
+    background-color: #ffffff;
+}
+.formOption{
+    margin-bottom: 0.5rem;
+}
+.formInputErr{
+    color:#dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important; 
+}
+.formErrMsg{
+    color:#dc3545;
+    font-size:0.85em;
+}
+.formHidden{
+    display:none !important;
+}
 
 /* The body of the home page */
 
@@ -186,7 +234,7 @@ hr{
 }
 .secimg{
     display: flex;
-    align-items: center;
+    align-self: center;
     justify-content: center;
 }
 .card{
@@ -242,15 +290,16 @@ hr{
 .prettyLink{
     color:#004403;
     text-decoration:none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     transition: all 0.5s;
 }
 .prettyLink:hover{
     border-bottom: 2px solid #5DB66D !important;
     color:#5DB66D !important;
 }
-.form-control:focus{
+:focus{
     border-color:#5DB66D !important;
+    outline: none;
     box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important; 
 }
 .btn{
@@ -263,18 +312,18 @@ hr{
     border-radius: 1.5rem;
     transition: color 0.5s;
 }
-.btn:focus{
+/* :focus{
     box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important; 
-}
+} */
 .btn:hover{
     background-color:#72b67e !important; 
     color:#ffffff !important;
 }
-.navbar-toggler:focus {
+/* .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important;
-}
+} */
 .smicon:hover{
     transition: 0.5s;
     filter:invert(77%);
