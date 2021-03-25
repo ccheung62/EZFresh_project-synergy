@@ -45,9 +45,10 @@
                     </h1>
                     <div class="formErr text-danger"></div>
                     <div style = "text-align:start;">Username</div>
-                    <div>
-                        <div class = "formErrMsg">This is an error message</div>
-                        <input type="text" class = "username loginInput" size = "35" autofocus placeholder = "Username or email">
+                    <!-- divided up for idenification in javascript -->
+                    <div> 
+                        <div class = "formErrMsg"></div>
+                        <input type="text" class = "username loginInput" size = "35" placeholder = "Username or email">
                     </div>
                     <div style = "text-align:start;">Password</div>
                     <div>
@@ -75,18 +76,25 @@
                     </h1>
                     <div class="formErr text-danger"></div>
                     <div style = "text-align:start">Username</div>
-                    <input type="text" id = "username" class = "loginInput" size = "35" autofocus placeholder = "Username">
-                    <div class = "formErrMsg">This is an error message</div>
+                    <div>
+                        <div class = "formErrMsg"></div>
+                        <input type="text" class = "loginInput username" size = "35" placeholder = "Username">
+                    </div>
                     <div style = "text-align:start;">Email Address</div>
-                    <input type="text" class = "loginInput" size = "35" placeholder = "Email Address">
-                    <div class = "formErrMsg"></div>
+                    <div>
+                        <div class = "formErrMsg"></div>
+                        <input type="text" class = "loginInput emailadd" size = "35" placeholder = "Email Address">
+                    </div>
                     <div style = "text-align:start;">Password</div>
-                    <input type="password" id = "password" class = "loginInput" size = "35" placeholder = "Password">
-                    <div class = "formErrMsg"></div>
+                    <div>
+                        <div class = "formErrMsg"></div>
+                        <input type="password" class = "loginInput password" size = "35" placeholder = "Password">
+                    </div>
                     <div style = "text-align:start;">Confirm Password</div>
-                    <input type="password" id = "password" class = "loginInput" size = "35" placeholder = "Confirm Password">
-                    <div class = "formErrMsg"></div>
-
+                    <div>
+                        <div class = "formErrMsg"></div>
+                        <input type="password" class = "loginInput confirmpass" size = "35" placeholder = "Confirm Password">
+                    </div>
                     <button class="btn my-2">Sign up</button>
 
                     <p class = "formOption">

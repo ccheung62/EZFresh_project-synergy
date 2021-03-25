@@ -3,8 +3,8 @@ function setFormMessage(formElement, msg){
     // if (!formElement.classList.contains("formErr")){
     //     formElement.classList.add("formErr");
     // }
-    const messageElement = formElement.querySelector(".formErr");
-    messageElement.textContent = msg;
+    // const messageElement = formElement.querySelector(".formErr");
+    formElement.querySelector(".formErr").textContent = msg;
 }
 // create error message for individual inputs 
 function setInputError(inputElement, message) {
@@ -40,9 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("you are trying to submit your login");
         console.log("e", e);
         console.log(e.target.value);
-        console.log("username is", loginForm.querySelector(".username").textContent);
-        console.log("password is", loginForm.querySelector(".password").textContent);
-        if (loginForm.querySelector(".username").textContent === "admin" && loginForm.querySelector(".password").textContent === "password"){
+        console.log("username is", loginForm.querySelector(".username").value);
+        console.log("password is", loginForm.querySelector(".password").value);
+        if (loginForm.querySelector(".username").value === "admin" && loginForm.querySelector(".password").value === "password"){
             console.log("successful login");
             window.location.href = "home.html";
         }
@@ -74,14 +74,31 @@ document.addEventListener("DOMContentLoaded", () => {
                     clearInputError(inputElement);
                 }
             }
-            else if(inputElement.classList.contains("password")){
-                if(e.target.value === null || e.target.value.length === 0){
-                    setInputError(inputElement, "Password can't be empty");
+            else if (inputElement.classList.contains("emailadd")){
+                if(!e.target.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)){
+                    setInputError(inputElement, "Invalid email address");
                 }
                 else{
                     clearInputError(inputElement);
                 }
             }
+            else if(inputElement.classList.contains("password")){
+                if(e.target.value === null || e.target.value.length < 4){
+                    setInputError(inputElement, "Password must be at least 4 characters long");
+                }
+                else{
+                    clearInputError(inputElement);
+                }
+            }
+            else if(inputElement.classList.contains("confirmpass")){
+                if(e.target.value != inputElement.parentElement.parentElement.querySelector(".password").value){
+                    setInputError(inputElement, "Password does not match");
+                }
+                else{
+                    clearInputError(inputElement);
+                }
+            }
+
             // switch (e.target.classList){
             //     case "username":
             //         if (e.target.value.length > 0){
