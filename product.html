@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset = "utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description of EZ Fresh -->
+    <title>EZ Fresh。Shopping made safe and easier at your fingertip!</title>
+    <meta name="description" content="Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
+    convenience of ordering takeout">
+    <!-- Social Media description -->
+    <meta property="og:type" content = "website">
+    <meta property="og:url" content = "https://ccheung62.github.io/EZFresh_project-synergy/">
+    <meta property="og:title" content = "EZ Fresh">
+    <meta property="og:description" content = "Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
+    convenience of ordering takeout">
+    <meta property="og:image" content = "https://ccheung62.github.io/EZFresh_project-synergy/assets/logo.png">
+    <!-- Fonts from Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+        crossorigin="anonymous">    
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Favicon -->
+    <link rel= "icon" href = "assets/circle-icon.png">
+    <link rel= "stylesheet" href = "style.css">
+    <script defer src= "src/script.js"></script>
+    <!-- Script from CSS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
+        crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    
+    <!-- Navigation bar -->
+    <nav class="navbar topNavBar navbar-expand-lg navbar-light fixed-top py-3 px-5 container-fluid">
+        <a class = "navbar-brand" href = "index.html" title="Home page">
+            <img src = "assets/icon.png" height = 40px alt="EZ Fresh icon">
+            <i>EZ </i>Fresh
+        </a>
+        <!-- toggler when the screen size decrease -->
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarCollapse" 
+            aria-controls="navbarCollapse" 
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="switchNavBar()"> 
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id = "navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class = "nav-item"><a class="nav-link" href = "index.html" title = "Home page">Home</a></li>
+                <li class = "nav-item dropdown">
+                    <a class = "nav-link" href = "about.html" title = "About page">About
+                        <span class= "dropdown-toggle" id = "navAboutDropMenu" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navAboutDropMenu">
+                        <li><a class="dropdown-item" href="about.html#">Why EZ Fresh?</a></li>
+                        <li><a class="dropdown-item" href="about.html#aboutMission">Our Mission</a></li>
+                        <li><a class="dropdown-item" href="about.html#aboutTeam">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class = "nav-item"><a class= "nav-link active-nav-link" href = "product.html" title = "Product page">Product</a></li>
+                <li class = "nav-item"><a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a></li>
+                <li class = "nav-item"><a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a></li>
+                <a class = "nav-item" href = "login.html" title = "Login/Sign Up Page"><button class = "btn me-3">Sign Up</button></a>
+            </ul>
+        </div>
+    </nav>
+    <div class = "row py-5">
+        <div class="col-6 d-lg-block d-none">
+            <img class = "img-fluid" src = "assets/leavelyshopping.png">
+        </div>
+        <div class = "pt-5 row">
+            <p class = "heading px-5">
+                    <span class = "leave"></span>
+                    The ongoing pandemic has affected day-to-day tasks like <span class = "highlight">shopping for groceries</span></span>
+                    <span class = "leave"></span>
+                </span>
+            </p>
+        </div>
+        <div class = "sec" style = "justify-content: space-evenly;">
+            <img class = "img-fluid" style = "max-height:100px;" src = "assets/watercolor-crossiant.png">
+            <a href = ""><button class = "leaveBtn">Vulnerable population <br>with limited assistance</button></a>
+            <img class = "img-fluid" style = "max-height:100px;" src = "assets/watercolor-coffee.png">
+        </div>
+        <div class = "sec" style = "justify-content: space-evenly;">   
+            <a href = ""><button class = "leaveBtn">Lack of job opportunites</button></a>
+            <img class = "img-fluid" style = "max-height:100px;" src = "assets/cabbage-5934708_1920.png">
+            <a href = ""><button class = "leaveBtn">Populated supermarkets</button></a>
+        </div>
+        <div class = "sec" style = "justify-content: space-evenly;">  
+            <img class = "img-fluid" style = "max-height:100px;" src = "assets/icon.png">
+            <p class = "heading">
+                <img class = "img-fluid" style = "max-height:100px;" src = "assets/carrot-5934702_1920.png">
+                Join us in our endeavor to help!
+                <img class = "img-fluid" style = "max-height:100px;" src = "assets/radish-5934739_1920.png"></p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class = "endFooter mt-4">
+        <div class="row">
+            <div class = "col-md-6 py-4">
+                <p class = "p-2 d-flex" style="background-color:#569c58;justify-content:space-evenly;border-radius:0rem 1rem 1rem 0rem;">
+                    Follow us on social media!
+                    <span>
+                        <a class = "px-2" href = "" ><img class = "smicon" src = "assets/facebook-icon.png" height=30px title = "EZ Fresh。Facebook"></a>
+                        <a class = "px-2" href = ""><img class = "smicon" src = "assets/twitter-icon.png" height=30px title = "EZ Fresh。Twitter"></a>
+                        <a class = "px-2" href = ""><img class = "smicon" src = "assets/instagram-icon.png" height=30px title = "EZ Fresh。Instagram"></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="row px-5 pb-5" style = "text-align: center;">
+            <div class = "col-md-3 mb-2">
+                <p class = "heading" style = "color:#444444;margin-bottom:0.5rem;">
+                    EZ Fresh&nbsp;&nbsp;
+                    <span class = "leave" style = "border: 5px solid #d3d8d4"></span>
+                </p><hr class = "ms-2">
+                <p class="pe-2" style="font-size:0.9em;color:#013803">
+                    Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
+                    convenience of ordering takeout
+                </p>
+            </div>
+            <div class="col-md-3 mb-2">
+                <p class = "heading" style = "color:#4e4c4c;font-size:1.5em;margin-bottom:0.5rem;">
+                    Learn More&nbsp;&nbsp;
+                    <span class = "leave" style = "border: 5px solid #d3d8d4"></span>
+                </p><hr class = "ms-2">
+                <ul class = "footercol" style = "list-style-type:none; padding:0px">
+                    <li><a class = "prettyLink" href = "about.html#aboutMission" title = "About page。Mission Statement">Our Mission</a></li>
+                    <li><a class = "prettyLink" href = "product.html" title = "Product page。Service">Our Service</a></li>
+                    <li><a class = "prettyLink" href = "faq.html" title = "FAQ">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-2">
+                <p class="heading" style = "color:#4e4c4c;font-size:1.5em;margin-bottom:0.5rem;">
+                    Resources&nbsp;&nbsp;
+                    <span class = "leave" style = "border: 5px solid #d3d8d4"></span>
+                </p><hr class = "ms-2">
+                <ul class = "footercol" style = "list-style-type:none; padding:0px">
+                    <li><a class = "prettyLink d-inline-flex" href = "index.html" title = "Home page">Manage Your Account</a></li>
+                    <li><a class = "prettyLink" href = "contact.html" title = "Contact page">Careers- Come Work with Us</a></li>
+                    <li><a class = "prettyLink" href = "contact.html" title = "Contact page">Partner with Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-2">
+                <p class = "heading" style = "color:#4e4c4c;font-size:1.5em;margin-bottom:0.5rem;">
+                    Contact Us&nbsp;&nbsp;
+                    <span class = "leave" style = "border: 5px solid #d3d8d4"></span>
+                </p><hr class = "ms-2">
+                <p class = "footercol">
+                    New York, NY, 10012, US<br>
+                    help@ezfresh.com<br>
+                    +1 800-777-7777
+                </p>
+            </div>
+            <span class = "row pt-3" style = "display:flex;justify-content:center;color:#4e4c4c;font-size:0.8em">© 2021 Copyright : EZ Fresh</span>  
+        </div>
+    </footer>
+</body>
+</html>

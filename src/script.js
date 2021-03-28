@@ -1,10 +1,11 @@
+// Initate AOS (text animation library)
+AOS.init();
+
+let username;
+
 // creates error message on top of the form
 function setFormMessage(formElement, msg){
-    // if (!formElement.classList.contains("formErr")){
-    //     formElement.classList.add("formErr");
-    // }
-    // const messageElement = formElement.querySelector(".formErr");
-    formElement.querySelector(".formErr").textContent = msg;
+    formElement.querySelector(".formErr").innerHTML = msg;
 }
 // create error message for individual inputs 
 function setInputError(inputElement, message) {
@@ -35,37 +36,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     // check if the correct username/password combination is used
     // username -> admin, password -> password
+    let attempt = 0;
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
-        console.log("you are trying to submit your login");
-        console.log("e", e);
-        console.log(e.target.value);
-        console.log("username is", loginForm.querySelector(".username").value);
-        console.log("password is", loginForm.querySelector(".password").value);
-        if (loginForm.querySelector(".username").value === "admin" && loginForm.querySelector(".password").value === "password"){
+        // hardset a username and password that works
+        if (loginForm.querySelector(".password").value === "password"){
             console.log("successful login");
+            username = loginForm.querySelector(".username").value;
+            console.log("username", username);
             window.location.href = "home.html";
         }
         else {
-            setFormMessage(loginForm, "Incorrect username/password combination");
+            // let the user know how to login after 9 attempts
+            if (attempt < 9){
+                setFormMessage(loginForm, "Incorrect username/password combination");
+                attempt++;
+            }
+            else {
+                setFormMessage(loginForm, "Put password as \"password\"");
+            }
         }
+    });
+    createForm.addEventListener("submit", e => {
+        console.log("you pressed the submit button");
+        console.log("createForm", createForm);
+        e.preventDefault();
+        console.log(createForm.querySelectorAll("formErrMsg"));
+        createForm.querySelectorAll("formErrMsg").forEach(inputErr => {
+            console.log("inputErr", inputErr)
+            if(inputErr.textContent.length > 0){
+                setFormMessage(createForm, "Requirements are not fullfilled");
+            }
+            else{
+                username = createForm.querySelector(".username").value;
+                window.location.href = "home.html";
+            }
+        })
     });
 
     document.querySelectorAll(".loginInput").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
-            // console.log("e", e);
-            // console.log("inputElement", inputElement);
-            // console.log("input", input);
-            console.log("parent element", inputElement.parentElement);
-            // console.log("does it contain username", input.classList.contains("username"));
-            // console.log("e.target.value", e.target.value);
-
-            // console.log("if it contains username", inputElement.classList.contains("username"));
-            // console.log("the text inside username", loginForm.querySelector(".username").textContent);
-            // console.log("is the value null?", e.target.value === null);
-            // console.log("the lenght is", e.target.value.length === 0);
-            // console.log("formErr is ", inputElement.querySelector(".formErr") === null);
-             
             if (inputElement.classList.contains("username")){
                 if(e.target.value === null || e.target.value.length === 0){
                     setInputError(inputElement, "Username can't be empty");
@@ -98,24 +108,42 @@ document.addEventListener("DOMContentLoaded", () => {
                     clearInputError(inputElement);
                 }
             }
-
-            // switch (e.target.classList){
-            //     case "username":
-            //         if (e.target.value.length > 0){
-            //             setInputError(inputElement, "Username can't be empty");
-            //         }
-            //     case "username":
-            //         if (e.target.value.length > 0 && e.target.value.length < 10){
-            //             setInputError(inputElement, "Password must be at least 10 characters in length");
-            //         }
-            // }
-            // if (e.target.class === "username" && e.target.value.length > 0 && e.target.value.length < 10) {
-            //     setInputError(inputElement, "Username must be at least 10 characters in length");
-            // }
         });
-
-        // inputElement.addEventListener("input", e => {
-        //     clearInputError(inputElement);
-        // });
     });
 });
+
+// Responsive navbar
+if(document.querySelector(".navbar") !== null){
+    const navbar = document.querySelector(".navbar");
+    window.onscroll = function(e) {
+        if (this.scrollY < 50){
+            navbar.classList.add("topNavBar");
+        }
+        else {
+            navbar.classList.remove("topNavBar");
+            // "false" for down and "true" for up
+            if (this.oldScroll > this.scrollY){
+                navbar.classList.remove("formHidden");
+                console.log("Is the hidden class there?",navbar.classList.contains("formHidden"));
+            }
+            else{
+                navbar.classList.add("formHidden");
+                console.log("did I add the hidden class?",navbar.classList.contains("formHidden"));
+            }
+        }
+    this.oldScroll = this.scrollY;
+    }
+}
+// remove transparency when toggle is opened
+function switchNavBar(){
+    if (this.scrollY < 50){
+        if (document.querySelector(".navbar-toggler").getAttribute("aria-expanded") === "true" || false){
+            document.querySelector(".navbar").classList.remove("topNavBar");
+        }
+        else{
+            console.log("they closed the toggle make the navbar invisible again");
+            document.querySelector(".navbar").classList.add("topNavBar");
+        }
+    }
+}
+

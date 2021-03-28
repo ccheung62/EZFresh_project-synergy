@@ -21,11 +21,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
-        crossorigin="anonymous">    
+        crossorigin="anonymous">  
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Favicon -->
     <link rel= "icon" href = "assets/circle-icon.png">
     <link rel= "stylesheet" href = "style.css">
-    <script src= "src/script.js"></script>
+    <script defer src= "src/script.js"></script>
     <!-- Script from CSS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
@@ -36,7 +39,7 @@
 <body>
     
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 px-5 container-fluid">
+    <nav class="navbar topNavBar navbar-expand-lg navbar-light fixed-top py-3 px-5 container-fluid">
         <a class = "navbar-brand" href = "index.html" title="Home page">
             <img src = "assets/icon.png" height = 40px alt="EZ Fresh icon">
             <i>EZ </i>Fresh
@@ -49,7 +52,8 @@
             data-bs-target="#navbarCollapse" 
             aria-controls="navbarCollapse" 
             aria-expanded="false"
-            aria-label="Toggle navigation"> 
+            aria-label="Toggle navigation"
+            onclick="switchNavBar()"> 
                 <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id = "navbarCollapse">
@@ -75,8 +79,8 @@
 
     <!-- Beginning -->
     <section class="startsec row">
-        <div class = "col-lg-6 order-2">
-            <p class = "startsectag">
+        <div class = "col-lg-6 order-2" style = "overflow: hidden;">
+            <p data-aos = "flip-left" data-aos-duration="1500" class = "startsectag">
                 <span class = "startText">
                     <span style="font-size:0.9em;background-color:#eef1ed;">We Care For</span><br>
                     <span class="highlight" style="font-size:1.2em;color:#002502;background-color:#eef1ed;"> 
@@ -87,26 +91,26 @@
             </p>
             <div class="mx-2">
                 <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
-                <span class = "ms-1 py-2" style = "background-color:#f7f4f4;color:#004403;font-size: xx-large;font-weight:bolder;">
+                <span class = "ms-1 py-2" style = "background-color:#f7f4f4;color:#004403;font-size: xx-large;font-weight:bolder;" data-aos = "fade-up-left">
                     Inspired to cook something new?
                 </span>
-                <div class = "searchBar row d-flex pt-4 pe-5" style = "flex-wrap: nowrap;">
+                <div class = "searchBar row d-flex pt-4 pe-5" style = "flex-wrap: nowrap;" data-aos = "fade-up-left" data-aos-delay="100">
                     <div class = "col-2"></div>
                     <div class = "col-8">
-                        <input class = "form-control" placeholder="Search for Supermarkets near you">
+                        <input class = "form-control" placeholder="Enter your zip code or address to start">
                     </div>
                     <div class = "col-2">
                         <button class = "btn mb-3" title = "Search for Supermarkets">Search</button>
                     </div>
                 </div>
-                <span class = "pt-3 me-5 mb-4" style="display:flex;justify-content: flex-end; text-decoration: none">
+                <span class = "pt-3 me-5 mb-4" style="display:flex;justify-content: flex-end; text-decoration: none" data-aos = "fade-up-left" data-aos-delay="200" data-aos-anchor = ".searchBar">
                     <a href="#redirectrecipe" class = "prettyLink" style = "background-color:#f7f4f4; border:transparent!important" title = "Jump to Weekly Recipe Haul">
                         Still unsure? Check out our&nbsp;<span style = "color:#4eb861">weekly recipe haul</span> <span style = "font-size:1.5em;">&nbsp;➤</span>
                     </a>
                 </span>
             </div>
         </div>  
-        <div class="secimg col-lg-6 order-1 py-4 ps-5 d-none d-lg-block">
+        <div class="secimg col-lg-6 order-1 py-4 ps-5 d-none d-lg-block" data-aos = "fade-left" data-aos-duration= "1200">
             <img src = "assets/leavelyshopping.png" class = "img-fluid" alt = "shopping online">
         </div>
     </section>
@@ -121,15 +125,15 @@
             <p class = "caption" style="display:flex;justify-content:center;align-items:center;">
                 It's That Simple!
             </p>
-            <div class = "icon col-md-4">
+            <div class = "icon col-md-4" data-aos= "fade-up" data-aos-duration= "800">
                 <img src="assets/pick-address.png" height="100px">
                 <p>Pick your Supermarket</p>
             </div>
-            <div class = "icon col-md-4">
+            <div class = "icon col-md-4" data-aos= "fade-up" data-aos-duration= "800" data-aos-delay= "100">
                 <img src="assets/pick-produce.png" height="100px">
                 <p>Choose your grocery</p>
             </div>
-            <div class="icon col-md-4" style="padding-right:6%;padding-left:6%">
+            <div class="icon col-md-4" style="padding-right:6%;padding-left:6%" data-aos= "fade-up" data-aos-duration= "800" data-aos-delay= "200">
                 <img src="assets/checkout.png" height="100px">
                 <p>Checkout</p>
             </div>
@@ -139,16 +143,16 @@
         <section class = "section1 pt-5 row">
             <div class = "caption col-md-6 order-2">
                 <span class = "row d-flex">
-                    <p class = "heading">
+                    <p class = "heading" data-aos= "fade-left">
                         Download our <span class = "highlight">App or Call us</span>!
                     </p>
-                    <p>
+                    <p data-aos= "fade-left" data-aos-delay= "100">
                         Going on this website everytime to order is annoying? With your convenience in mind, we made an app and a toll-free number.
                         Your grocery is now truly <span style = "color:#4eb861">a tap and a call</span> away! No need to worry about technical issues 
                         either, we made sure you can <span style = "color:#4eb861">finish everything with just a phone call</span>. You don't need to
                         be tech-savvy just to buy groceries afterall!
                     </p>
-                    <span class = "icon col-md-6">
+                    <span class = "icon col-md-6" data-aos = "fade-up">
                         <p style = "font-size: 1.7em;">
                             Call us!
                         </p>
@@ -157,7 +161,7 @@
                             @ +1-800-777-7777
                         </p>
                     </span>
-                    <span class = "icon col-md-6">
+                    <span class = "icon col-md-6" data-aos = "fade-up">
                         <p style = "font-size:1.7em" class = "pb-1">
                             Download our App!
                         </p>
@@ -166,7 +170,7 @@
                     </span>
                 </span>
             </div>
-            <div class = "sec1img col-md-6">
+            <div class = "sec1img col-md-6" data-aos = "fade-right" data-aos-duration= "600">
                 <img class = "img-fluid" src = "assets/undraw_download_pc33.png">
             </div>
         </section>
@@ -174,48 +178,47 @@
         <!-- Section 2 -->
         <section class = "section2 pt-5 row">
                 <div class = "caption col-md-6">
-                    <p class = "heading">
+                    <p class = "heading" data-aos= "fade-left">
                         Shopping At Your Fingertips. <span class = "highlight">Easy and Safe</span>, Just like that!<br>
                     </p>
-                    <p>
+                    <p data-aos = "fade-left" data-aos-delay= "100">
                         EZFresh <span style = "color:#4eb861">takes away the hassle of grocery shopping</span>. You can now schedule our services 
                         and have your produce delivered to your door at any time of the day. Now you don’t have to rush out of work or handle multiple 
                         tasks at one go! With the COVID pandemic, we have the <span style ="color:#4eb861">safety of both our clients and employees</span> 
                         in mind. We believe that keeping the vulnerable population safe and the health of our community is our #1 Priority. 
                     </p>
                 </div>
-                <div class = "secimg col-md-6">
+                <div class = "secimg col-md-6" data-aos = "fade-right" data-aos-duration= "600">
                     <img src = "assets/undraw_add_to_cart_vkjp.png" class = "img-fluid">
                 </div>
         </section>
 
         <!-- Section 3 -->
-        <section class = "section3 row py-5">
+        <section class = "sec row py-5">
                 <div class = "caption col-md-6 order-2">
-                    <p class = "heading">
+                    <p class = "heading" data-aos= "fade-left">
                         Get More <span class = "highlight">Discounts and Rewards</span> as You Purchase!
                     </p>
-                    <span>
+                    <span data-aos = "fade-left" data-aos-delay= "100">
                         We believe everyone deserves high quality, locally-sourced produce delivered to your front door. Our philosophy: Discounts! 
-                        <span class = "leave my-2">After 6 months of your registration →</span>
+                        <span class = "leave my-2" data-aos = "fade-left" data-aos-delay = "100">After 6 months of your registration →</span>
                         <ul style = "margin-top:0px;"><ul style ="margin-top:0px;">
-                            <li>For <span style = "color:#4eb861">every $150 purchases, get $10</span> for free!</li>
-                            <li>Get <span style = "color:#4eb861">25% off all purchase every Wednesday</span> from 
+                            <li data-aos = "fade-left" data-aos-delay = "200">For <span style = "color:#4eb861">every $150 purchases, get $10</span> for free!</li>
+                            <li data-aos = "fade-left" data-aos-delay = "300">Get <span style = "color:#4eb861">25% off all purchase every Wednesday</span> from 
                             your favorite supermarkets!</li>
-                            <li>Recieve <span style = "color:#4eb861">personalized discount highlights</span> with our 
+                            <li data-aos = "fade-left" data-aos-delay = "400">Recieve <span style = "color:#4eb861">personalized discount highlights</span> with our 
                             monthly email based on your shopping history</li>
                         </ul></ul>
                         With EZ Fresh, every purchase you make will <span style = "color:#4eb861">help both your community and your pocket</span>!
                     </span>
-                    <span id = "redirectrecipe"></span>
                 </div>
-                <div class = "col-md-6 secimg order-1">
+                <div class = "col-md-6 secimg order-1" data-aos = "fade-right" data-aos-duration = "600">
                     <img src = "assets/undraw_discount_d4bd.png" class = "img-fluid">
                 </div>
         </section>
 
         <!-- Weekly Recipe Haul  -->
-        <section class = "pt-5 pb-5 row">
+        <section id = "redirectrecipe" class = "pt-5 pb-5 row">
             <p class = "heading" style = "text-align:center;">
                 <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
                 &nbsp;Weekly <span class = "highlight">Recipe Haul</span>&nbsp;
@@ -225,7 +228,7 @@
                 Want to be inspired? Check out this weeks featured recipes!
             </p>
             <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4" style = "margin-top:0px;">
-                <div class = "col">
+                <div class = "col" data-aos= "fade-up" data-aos-duration= "600" data-aos-delay= "300">
                     <div class="card p-1">
                         <img src="assets/burger.png" class="card-img-top img-fluid" alt="Burger">
                         <div class="card-body">
@@ -236,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos= "fade-up" data-aos-duration= "600" data-aos-delay= "100">
                     <div class="card p-1">
                         <img src="assets/Curry Potatoes.png" class="card-img-top img-fluid" alt="Curry Potatoes">
                         <div class="card-body">
@@ -247,7 +250,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos= "fade-up" data-aos-duration= "600">
                     <div class="card p-1">
                         <img src="assets/brownie.png" class="card-img-top img-fluid" alt="Brownie">
                         <div class="card-body">
@@ -258,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos= "fade-up" data-aos-duration= "600" data-aos-delay= "200">
                     <div class="card p-1">
                         <img src="assets/spring-roll.jpeg" class="card-img-top img-fluid" alt="Vietnamese Fresh Spring Rolls">
                         <div class="card-body">

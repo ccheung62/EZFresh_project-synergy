@@ -9,7 +9,7 @@
     <!-- Social Media description -->
     <meta property="og:type" content = "website">
     <meta property="og:url" content = "https://ccheung62.github.io/EZFresh_project-synergy/login.html">
-    <meta property="og:title" content = "EZ Fresh">
+    <meta property="og:title" content = "Login/Sign Up。EZ Fresh">
     <meta property="og:description" content = "Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
     convenience of ordering takeout">
     <meta property="og:image" content = "https://ccheung62.github.io/EZFresh_project-synergy/assets/logo.png">
@@ -20,7 +20,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
-        crossorigin="anonymous">    
+        crossorigin="anonymous"> 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  
     <!-- Favicon -->
     <link rel= "icon" href = "assets/circle-icon.png">
     <link rel= "stylesheet" href = "style.css">
@@ -32,12 +34,12 @@
     <script defer src = "src/script.js"></script>
 </head>
 
-<body>
-    <div class="blurImg">
+<body style = "background-image: linear-gradient(120deg, #ebebeb 0%, #96e6a1 100%);background-size: cover;background-repeat:no-repeat;min-height:100vh;">
+    <!-- <div class="blurImg"> -->
+        <a href = "index.html"><button class = "btn mx-5 mt-5">← Back</button></a>
         <div class="loginForm">
-            <!-- Login Form -->
-            <form class ="form leave d-inline-flex" style = "justify-content:center;background-color: rgb(252, 252, 252);" id = "login">
-                <div class = "p-5" style = "text-align: center;">
+            <form class ="form leave d-flex p-4 card-colored" id = "login">
+                <div class = "p-3" style = "text-align: center;">
                     <h1 class = "formMsg">
                         <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
                         Login
@@ -67,7 +69,7 @@
                 <img class = "secimg d-lg-block d-none" style = "max-height: 300px" src = "assets/undraw_unlock_24mb.png" >
             </form>
             <!-- Sign up form -->
-            <form class ="form leave d-inline-flex p-5 formHidden" style = "justify-content:center;background-color:rgb(252, 252, 252)" id = "signup">
+            <form class ="form leave d-flex card-colored p-4 formHidden" id = "signup">
                 <div style = "text-align: center;">
                     <h1 class = "formMsg">
                         <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
@@ -78,7 +80,7 @@
                     <div style = "text-align:start">Username</div>
                     <div>
                         <div class = "formErrMsg"></div>
-                        <input type="text" class = "loginInput username" size = "35" placeholder = "Username">
+                        <input type="text" class = "loginInput username" autofocus size = "35" placeholder = "Username">
                     </div>
                     <div style = "text-align:start;">Email Address</div>
                     <div>
@@ -95,13 +97,14 @@
                         <div class = "formErrMsg"></div>
                         <input type="password" class = "loginInput confirmpass" size = "35" placeholder = "Confirm Password">
                     </div>
-                    <button class="btn my-2">Sign up</button>
+                    <button type = "submit" class="btn my-2">Sign up</button>
 
                     <p class = "formOption">
                         <a id="loginLink" href = "" class = "prettyLink">Already have an account? Sign in</a>
                     </p>
                 </div>
-                <img class = "secimg d-lg-block d-none" style = "max-height: 500px" src = "assets/undraw_referral_4ki4.png" >
+                <img class = "secimg d-lg-block d-none" style = "max-height: 450px" src = "assets/undraw_referral_4ki4.png" >
             </form>
-    </div>
+        </div>
+    <!-- </div> -->
 </body>

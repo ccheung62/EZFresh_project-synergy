@@ -11,6 +11,14 @@ body{
     border-bottom: 3px solid #d6d5d5;
     background-color:rgba(255,255,255,0.9);
     backdrop-filter: blur(10px);
+    transition: all 0.5s;
+}
+.topNavBar{
+    position: absolute;
+    top:0;
+    background-color: transparent !important;
+    border: transparent !important;
+    backdrop-filter:unset;
 }
 .nav-link {
     display:inline-block;
@@ -78,19 +86,18 @@ body{
 .navbar .nav-item .dropdown-menu{ margin-top:0; }
 
 /* Login/Sign Up Form */
-.blurImg{
-    background-image: url(assets/leaves-5643327_1920.png);
+/* .blurImg{
+    height:100%;
+    background-image: url(assets/green-1033681_1280.jpg);
     background-size: cover;
-    background-position:center;
+    background-position:bottom;
     background-repeat: no-repeat;
-}
+} */
 .loginForm{
-    height:100vh;
     font-family: 'ABeeZee', 'Montserrat', sans-serif;
     display:flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(2px);
 }
 .formMsg{
     text-align: center;
@@ -112,7 +119,6 @@ body{
     margin-bottom: 0.5rem;
 }
 .formInputErr{
-    color:#dc3545;
     box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important; 
 }
 .formErrMsg{
@@ -131,6 +137,7 @@ body{
     justify-content: center;
     align-content: center;
     /* align-items: center; */
+    overflow: hidden;
     padding-top: 80px;
     background-image: url(assets/leaves-5643327_1920.png);
     background-position: top;
@@ -139,26 +146,19 @@ body{
 }
 .startsectag{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap:wrap;
     font-size:small;
     text-align: center;
-    line-height: 350%;
-    padding-right: 32%; /*33*/
-    padding-top: 16%; /*17*/
-    padding-bottom: 16%; /*18*/
-    padding-left: 24%; /*23*/
+    line-height: 333%;
+    padding-right: 32%; /*32*/
+    padding-top: 16%; /*16*/
+    padding-bottom: 16%; /*16*/
+    padding-left: 24%; /*24*/
     background-image: url(assets/sec-framed-price-tag.png);
     background-repeat: no-repeat;
     background-position:center;
     background-size:contain;
-}
-
-/* Section 3 */
-.section3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Weekly Recipe Haul */
@@ -198,14 +198,26 @@ body{
     padding-left:18%;  /*40*/
     padding-right:33%;  /*30*/
 }
-.leave{
-    display:inline-block;
-    padding:0.5rem 1rem;
-    font-weight: bold;
-    letter-spacing:1px;
-    background-color:#c0d1c0;
-    border-radius: 1.5rem 0rem 1.5rem 0rem;
-    border: 5px solid #e6e9e6;
+.profile:hover{
+    border: 10px solid rgba(196, 196, 196, 0.5);
+    width:80%;
+    height:auto;
+    transition: all 0.3s;
+}
+.profile-icon:hover::after{
+    opacity: 1;
+    transition: all 0.3s;
+}
+.profile-icon::after{
+    content:"";
+    opacity:0;
+    background-image: url(assets/linkedin-icon.png);
+    background-size: 40px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: -84px;
+    left: 69px;
 }
 
 /* General CSS */
@@ -232,6 +244,11 @@ hr{
     border-top:2px solid #5DB66D;
     margin-top:0rem;
 }
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .secimg{
     display: flex;
     align-self: center;
@@ -243,9 +260,12 @@ hr{
     border:transparent;
 }
 .card-colored{
-    border: 2px solid rgba(197, 197, 197,0.3);
-    border-radius: 2rem;
-    background-color: rgba(197, 197, 197, 0.1); 
+    /* border: 10px solid rgba(197, 197, 197,0.3) !important; */
+    box-shadow: 0 0 0 1rem rgba(197, 197, 197,0.35) !important; 
+    /* background-color: rgba(197, 197, 197, 0.1);  */
+    /* border-radius: 0rem 5rem 0rem 5rem !important; */
+    /* justify-content:center; */
+    background-image: linear-gradient(120deg, #b7e4bd 0%, #ebebeb 100%);
 }
 .card-img-top{
     border-radius: 50%;
@@ -268,7 +288,30 @@ hr{
     background-size: 100% 95%;
     padding: 8px 0;
 }
+/* Leaves */
+.leave{
+    display:inline-block;
+    padding:0.5rem 1rem;
+    font-weight: bold;
+    letter-spacing:1px;
+    background-color:#c0d1c0;
+    border-radius: 1.5rem 0rem 1.5rem 0rem;
+    border: 5px solid #e6e9e6;
+}
 
+.leaveBtn{
+    display:inline-block;
+    padding:0.5rem 1rem;
+    font-weight: bold;
+    background-color: rgba(114, 182, 126, 0.1);
+    border-radius: 1.5rem 0rem 1.5rem 0rem;
+    border: 5px solid #d3e5d6;
+    transition: color 0.5s;
+}
+.leaveBtn:hover{
+    color:#ffffff !important;
+    background-color: rgba(107, 179, 120, 0.8) !important;
+}
 /* Change font-size for price-tag background text */
 @media (min-width: 375px){
     .startText{ font-size:medium; }
