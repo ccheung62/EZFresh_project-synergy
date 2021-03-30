@@ -34,6 +34,10 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
         crossorigin="anonymous">
     </script>
+    <!-- Fonts from fontawesome -->
+    <script src="https://kit.fontawesome.com/28ae02582e.js" crossorigin="anonymous"></script>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
@@ -76,36 +80,163 @@
             </ul>
         </div>
     </nav>
-    <div class = "row py-5">
-        <div class="col-6 d-lg-block d-none">
-            <img class = "img-fluid" src = "assets/leavelyshopping.png">
+    <div class = "py-5 row productstart">
+        <div class = "col-lg-6 pt-5" style = "text-align: center;position:relative;">
+            <span class = "heading" style = "position:absolute;top: 10%;left: 20%;background-color:#eeeeee;">
+                <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
+                Our Product
+                <span class = "leave"></span>
+            </span>
+            <div class = "productCaption" style = "background-color: rgb(255, 249, 241);top: 24%;left: 10%;">
+                Busy? Use our Services and schedule your order with the tip of your fingers. Just select your local supermarket and get your 
+                groceries on the go and delivered to your doorstep, Hassle-Free!
+            </div>
+            <div class = "productCaption" style = "background-color: rgb(246, 255, 250);top: 49%;left: 55%;">
+                EZ Fresh allows consumers to order groceries from local supermarkets delivered directly to their door. The platform will allow 
+                for local supermarkets to grow their businesses and reputation among the community, especially during the pandemic. There is no 
+                cost of using the app/website.
+            </div>
+            <div style = "font-size: 1.8em;position: absolute;top: 31%;left: 64%;background-color:#eeeeee;">
+                <i class="far fa-thumbs-up"></i> Easy-to-use
+            </div>
+            <div style = "font-size: 1.8em;position: absolute;top: 69%;left: 15%;background-color:#eeeeee;">
+                <i class="fas fa-shipping-fast"></i> Reliable
+            </div>
         </div>
-        <div class = "pt-5 row">
-            <p class = "heading px-5">
-                    <span class = "leave"></span>
-                    The ongoing pandemic has affected day-to-day tasks like <span class = "highlight">shopping for groceries</span></span>
-                    <span class = "leave"></span>
-                </span>
-            </p>
-        </div>
-        <div class = "sec" style = "justify-content: space-evenly;">
-            <img class = "img-fluid" style = "max-height:100px;" src = "assets/watercolor-crossiant.png">
-            <a href = ""><button class = "leaveBtn">Vulnerable population <br>with limited assistance</button></a>
-            <img class = "img-fluid" style = "max-height:100px;" src = "assets/watercolor-coffee.png">
-        </div>
-        <div class = "sec" style = "justify-content: space-evenly;">   
-            <a href = ""><button class = "leaveBtn">Lack of job opportunites</button></a>
-            <img class = "img-fluid" style = "max-height:100px;" src = "assets/cabbage-5934708_1920.png">
-            <a href = ""><button class = "leaveBtn">Populated supermarkets</button></a>
-        </div>
-        <div class = "sec" style = "justify-content: space-evenly;">  
-            <img class = "img-fluid" style = "max-height:100px;" src = "assets/icon.png">
-            <p class = "heading">
-                <img class = "img-fluid" style = "max-height:100px;" src = "assets/carrot-5934702_1920.png">
-                Join us in our endeavor to help!
-                <img class = "img-fluid" style = "max-height:100px;" src = "assets/radish-5934739_1920.png"></p>
+        <div class = "d-lg-block d-none col-lg-6">
+            <img class = "img-fluid" src = "assets/undraw_package_arrived_63rf.png">
         </div>
     </div>
+    <div class = "pb-5" style = "background-image: linear-gradient(180deg, #d9e2d9 0%, #d2e4d2 100%); font-family: 'ABeeZee', 'Montserrat', sans-serif;font-size:0.9em;">
+        <span class = "row pt-5 px-5">
+            <p class = "heading" style = "text-align: center;">The Problem</p>
+        </span>
+        <span class = "ms-5" style = "font-size:1.1em;">The ongoing pandemic has affected <span style = "background-color:#5DB66D;color:#ffffff">day-to-day tasks</span> like shopping for groceries</span>
+        <div class = "row py-5">
+            <div class = "col-4" style = "text-align: center;">
+                <i style = "font-size:3em;" class="fas fa-briefcase pb-4"></i><br>
+                Lack of job opportunites
+            </div>
+            <div class = "col-4" style = "text-align: center;">
+                <i style = "font-size:3em;" class = "fas fa-hands-helping pb-4"></i><br>
+                Vulnerable population <br>with limited assistance
+            </div>
+            <div class = "col-4" style = "text-align: center;">
+                <i style = "font-size:3em;" class="fas fa-people-arrows pb-4"></i><br>
+                Populated supermarkets
+            </div>
+        </div>
+        <!-- <div class = "col-md-6 pt-5 order-1">
+            <img class = "img-fluid" src = "assets/undraw_detailed_analysis_xn7y.png">
+        </div> -->
+    </div>
+    <div class = "container py-5">
+        <div class = "row">
+            <div class = "col-md-6 py-5">
+                <p class = "heading">Job opportunites</p><hr>
+                <span class = "px-5" style = "font-size:0.9em;">
+                    There is a lack of job opportunities and the unemployment rate rose from 3.5% in February 2020, to 14.5% 
+                    in March 2020, which is a 314% increase in the national unemployment rate 
+                    <a class = "prettyLink" style = "color:#386d42"href = "https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm">(U.S. Bureau of Labor Statistics)</a>
+                </span>
+            </div>
+            <div class = "col-md-6" style = "position: relative;">
+                <div class = "chart">
+                    <div id="chart_div" style = "width: 100%; min-height: 450px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "pt-5 col-md-6">
+                <img class = "img-fluid" src = "assets/undraw_empty_street_sfxm.png">
+            </div>
+            <span class = "col-md-6 pt-5" style = "font-size:0.9em;">
+                <p class = "pt-5 heading">Limited Assistance</p><hr>
+                Vulnerable groups such as elderly people are highly at risk but assistance rates are limited; therefore, elders living alone have to buy food themselves, and many cannot travel to the supermarket.
+            </span>
+        </div>
+        <div class = "row" style = "font-size:0.9em;">
+            <div class = "pt-5 col-md-6">
+                <p class = "pt-5 heading">Supermarket capacity</p><hr>
+                Supermarkets have limited capacity, so local supermarkets in areas where there is less competition are extremely populated, increasing the risk of becoming infected with COVID-19
+            </div>
+            <div class = "col-md-6">
+                <img class = "img-fluid" src = "assets/undraw_social_distancing_2g0u.png">
+            </div>
+        </div>
+    </div>
+    <div class = "pb-5" style = "background-image: linear-gradient(180deg, #d9e2d9 0%, #d2e4d2 100%); font-family: 'ABeeZee', 'Montserrat', sans-serif;font-size:0.9em;">
+        <span class = "row pt-5 px-5">
+            <p class = "heading" style = "text-align: center;">Our Pitch</p>
+        </span>
+        <span class = "ms-5" style = "font-size:1.1em;">Because of that, we decided to create <span style = "background-color:#5DB66D;color:#ffffff">EZ Fresh</span> to help out our community!</span>
+        <div class = "row p-5 row-cols-md-6 row-cols-3 g-6">
+            <div class = "col" style = "text-align: center;">
+                <i style = "font-size:3em;" class="fas fa-map-marked-alt py-2"></i><br>
+                Supports local small businesses
+            </div>
+            <div class = "col" style = "text-align: center;">
+                <i style = "font-size:3em;" class="fas fa-shopping-basket py-2"></i><br>
+                Provides easy access to fresh produce
+            </div>
+            <div class = "col" style = "text-align: center;">
+                <i style = "font-size:3em;" class="fas fa-blender-phone py-2"></i><br>
+                Platforms for chiefs and influencers to promote
+            </div>
+            <div class = "col" style = "text-align: center;">
+                <i style = "font-size:3em;" class="fas fa-utensils py-2"></i><br>
+                Get local authentic products remotely 
+            </div>
+            <div class = "col" style = "text-align: center;">
+                <i style = "font-size:3em;" class="fas fa-money-bill-wave py-2"></i><br>
+                Creates new entry-level job opportunites
+            </div>
+            <div class = "col" style = "text-align: center;">
+                <i style = "font-size:3em;" class="far fa-user-circle py-2"></i><br>
+                Personalizes to minimize shopping time
+            </div>
+        </div>
+    </div>
+    <div class = "timeline">
+        <div class = "timeContainer left">
+            <div class = "timeContent">
+            <h3><i class="fas fa-search-location" style = "font-size:1.2em;"></i> Find your supermarket</h3>
+            <p>Find the supermarkets you know and love or try out new supermarkets you never had the chance to try before</p>
+            </div>
+        </div>
+        <div class = "timeContainer right">
+            <div class = "timeContent">
+            <h3><i class="fas fa-cart-plus" style = "font-size:1.2em;"></i> Place your order</h3>
+            <p>Browse around numerous discount and supermarkets available for the best or cheapest produces</p>
+            <ul>
+                <li>When logged in →</li>
+                <ul>
+                    <li>Extra discounts and rewards based on your account </li>
+                    <li>Recieve personalized highlight on discounted goods</li>
+                </ul>
+            </ul>
+            </div>
+        </div>
+        <div class = "timeContainer left" style = "width: 40%;left: 10%;">
+            <div class = "timeContent">
+                There are also Weekly Recipe Haul provided by chiefs and influencers for inspiration. Check them out!
+            </div>
+        </div>
+        <div class = "timeContainer right">
+            <div class = "timeContent">
+                <h3><i class="fas fa-tasks" style = "font-size:1.2em;"></i> Track your order</h3>
+                <p>Get the estimate time or schedule when you would like your groceries</p>
+            </div>
+        </div>
+        <div class = "timeContainer left" style = "width: 40%;left: 10%;">
+            <div class = "timeContent">
+                You can also opt to get your receipts back!
+            </div>
+        </div>
+    </div>
+    <span class = "d-flex" style = "justify-content: center;">
+        <a href = "login.html" style = "text-decoration:none;"><button class = "btn">Join us now! It's free</button></a>
+    </span>
     <!-- Footer -->
     <footer class = "endFooter mt-4">
         <div class="row">
@@ -168,4 +299,74 @@
         </div>
     </footer>
 </body>
+
+<script>
+// ['Month', 'total', 'Men, 20 years and over','Women, 20 years and over','16 to 19 years old','White','Black or African American','Asian','Hispanic or Latino'],
+// ['Jan 2020', 3.5, 3.1, 3.2, 12.6, 3.0, 6.1, 3.1, 4.3],
+// ['Feb 2020', 3.5, 3.2, 3.1, 11.5, 3.0, 6.0, 2.4, 4.4],
+// ['Mar 2020', 4.4, 4.1, 4.0, 14.1, 3.9, 6.8, 4.1, 6.0],
+// ['Apr 2020', 14.8, 13.1, 15.5, 32.1, 14.1, 16.7, 14.5, 18.9],
+// ['May 2020', 13.3, 11.6, 13.9, 29.6, 12.3, 16.7, 14.9, 17.6],
+// ['June 2020', 11.1, 10.2, 11.3, 22.6, 10.1, 15.3, 13.9, 14.5],
+// ['July 2020',10.2, 9.4, 10.4, 19.1, 9.2, 14.4, 11.9, 12.7],
+// ['Aug 2020', 8.4, 8.0, 8.3, 16.4, 7.4, 12.8, 10.6, 10.5],
+// ['Sept 2020', 7.8, 7.3, 7.7, 16.3, 7.0, 12.0, 8.8, 10.3],
+// ['Oct 2020', 6.9, 6.7, 6.5, 14.0, 6.0, 10.8, 7.6, 8.8],
+// ['Nov 2020', 6.7, 6.6, 6.2, 13.9, 5.9, 10.3, 6.7, 8.4],
+// ['Dec 2020', 6.7, 6.4, 6.3, 16.0, 6.0, 9.9, 5.9, 9.3],
+// ['Jan 2021', 6.3, 6.0, 6.0, 14.8, 5.7, 9.2, 6.6, 8.6],
+// ['Feb 2021', 6.2, 6.0, 5.9, 13.9, 5.6, 9.9, 5.1, 8.5]
+
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawStacked);
+
+function drawStacked() {
+    var data = google.visualization.arrayToDataTable([
+        ['Month', 'rate(%)'],
+        ['Jan 2020', 3.5],
+        ['Feb 2020', 3.5],
+        ['Mar 2020', 4.4],
+        ['Apr 2020', 14.8],
+        ['May 2020', 13.3],
+        ['June 2020', 11.1],
+        ['July 2020',10.2],
+        ['Aug 2020', 8.4],
+        ['Sept 2020', 7.8],
+        ['Oct 2020', 6.9],
+        ['Nov 2020', 6.7],
+        ['Dec 2020', 6.7],
+        ['Jan 2021', 6.3],
+        ['Feb 2021', 6.2]
+    ]);
+
+    var options = {
+        title: 'Civilian unemployment rate',
+        isStacked: true,
+        hAxis: {
+          title: 'Month'
+        },
+        vAxis: {
+          title: 'Percent (%)'
+        },
+        legend: 'none',
+        backgroundColor: '#F3ECE7',
+        fontName: 'ABeeZee'
+        // annotations: {
+        //     textStyle: {
+        //         color: 'black',
+        //         fontSize: 11,
+        //     },
+        //     alwaysOutside: true
+        // }
+    };
+    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+}
+document.addEventListener("resize", resizeChart);
+function resizeChart(){
+    console.log("resizing the chart");
+    drawStacked();
+}
+</script>
+
 </html>
