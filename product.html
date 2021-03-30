@@ -24,11 +24,10 @@
         crossorigin="anonymous">    
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Favicon -->
     <link rel= "icon" href = "assets/circle-icon.png">
     <link rel= "stylesheet" href = "style.css">
-    <script defer src= "src/script.js"></script>
     <!-- Script from CSS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" 
@@ -36,7 +35,7 @@
     </script>
     <!-- Fonts from fontawesome -->
     <script src="https://kit.fontawesome.com/28ae02582e.js" crossorigin="anonymous"></script>
-    <!--Load the AJAX API-->
+    <!-- Google Charts -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
@@ -73,55 +72,64 @@
                         <li><a class="dropdown-item" href="about.html#aboutTeam">Our Team</a></li>
                     </ul>
                 </li>
-                <li class = "nav-item"><a class= "nav-link active-nav-link" href = "product.html" title = "Product page">Product</a></li>
+                <li class = "nav-item dropdown">
+                    <a class= "nav-link active-nav-link" href = "product.html" title = "Product page">Product
+                        <span class= "dropdown-toggle" id = "navProductDropMenu" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navProductDropMenu">
+                        <li><a class="dropdown-item" href="product.html#problem">Problem</a></li>
+                        <li><a class="dropdown-item" href="product.html#service">Our Service</a></li>
+                    </ul>
+                </li>
                 <li class = "nav-item"><a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a></li>
                 <li class = "nav-item"><a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a></li>
                 <a class = "nav-item" href = "login.html" title = "Login/Sign Up Page"><button class = "btn me-3">Sign Up</button></a>
             </ul>
         </div>
     </nav>
+    <!-- Beginning -->
     <div class = "py-5 row productstart">
         <div class = "col-lg-6 pt-5" style = "text-align: center;position:relative;">
-            <span class = "heading" style = "position:absolute;top: 10%;left: 20%;background-color:#eeeeee;">
+            <span class = "heading" style = "position:absolute;top: 10%;left: 20%;background-color:#eeeeee;" data-aos = "fade-right" data-aos-duration = "500">
                 <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
                 Our Product
                 <span class = "leave"></span>
             </span>
-            <div class = "productCaption" style = "background-color: rgb(255, 249, 241);top: 24%;left: 10%;">
+            <div class = "productCaption" style = "background-color: rgb(255, 249, 241);top: 24%;left: 10%;" data-aos = "fade-right" data-aos-duration = "500" data-aos-delay = "200">
                 Busy? Use our Services and schedule your order with the tip of your fingers. Just select your local supermarket and get your 
                 groceries on the go and delivered to your doorstep, Hassle-Free!
             </div>
-            <div class = "productCaption" style = "background-color: rgb(246, 255, 250);top: 49%;left: 55%;">
+            <div class = "productCaption" style = "background-color: rgb(246, 255, 250);top: 49%;left: 55%;" data-aos = "fade-left" data-aos-duration = "500" data-aos-delay = "400">
                 EZ Fresh allows consumers to order groceries from local supermarkets delivered directly to their door. The platform will allow 
                 for local supermarkets to grow their businesses and reputation among the community, especially during the pandemic. There is no 
                 cost of using the app/website.
             </div>
-            <div style = "font-size: 1.8em;position: absolute;top: 31%;left: 64%;background-color:#eeeeee;">
+            <div style = "font-size: 1.8em;position: absolute;top: 31%;left: 64%;background-color:#eeeeee;" data-aos = "fade-left" data-aos-duration = "500" data-aos-delay = "100">
                 <i class="far fa-thumbs-up"></i> Easy-to-use
             </div>
-            <div style = "font-size: 1.8em;position: absolute;top: 69%;left: 15%;background-color:#eeeeee;">
+            <div style = "font-size: 1.8em;position: absolute;top: 69%;left: 15%;background-color:#eeeeee;" data-aos = "fade-right" data-aos-duration = "500" data-aos-delay = "300">
                 <i class="fas fa-shipping-fast"></i> Reliable
             </div>
         </div>
-        <div class = "d-lg-block d-none col-lg-6">
-            <img class = "img-fluid" src = "assets/undraw_package_arrived_63rf.png">
+        <div class = "d-lg-block d-none col-lg-6" data-aos = "fade-left" data-aos-duration = "800">
+            <img class = "img-fluid" src = "assets/undraw_package_arrived_63rf-framed.png">
         </div>
     </div>
-    <div class = "pb-5" style = "background-image: linear-gradient(180deg, #d9e2d9 0%, #d2e4d2 100%); font-family: 'ABeeZee', 'Montserrat', sans-serif;font-size:0.9em;">
+    <div id = "problem" class = "pb-5" style = "background-image: linear-gradient(180deg, #d9e2d9 0%, #d2e4d2 100%); font-family: 'ABeeZee', 'Montserrat', sans-serif;font-size:0.9em;">
         <span class = "row pt-5 px-5">
-            <p class = "heading" style = "text-align: center;">The Problem</p>
+            <p class = "heading" style = "text-align: center;" data-aos = "fade-up" data-aos-duration = "400">The Problem</p>
         </span>
-        <span class = "ms-5" style = "font-size:1.1em;">The ongoing pandemic has affected <span style = "background-color:#5DB66D;color:#ffffff">day-to-day tasks</span> like shopping for groceries</span>
+        <span class = "ms-5" style = "font-size:1.1em;" data-aos = "fade-right" data-aos-delay = "100">The ongoing pandemic has affected <span style = "background-color:#5DB66D;color:#ffffff">day-to-day tasks</span> like shopping for groceries</span>
         <div class = "row py-5">
-            <div class = "col-4" style = "text-align: center;">
+            <div class = "col-4" style = "text-align: center;" data-aos = "fade-up-right" data-aos-delay = "200">
                 <i style = "font-size:3em;" class="fas fa-briefcase pb-4"></i><br>
                 Lack of job opportunites
             </div>
-            <div class = "col-4" style = "text-align: center;">
+            <div class = "col-4" style = "text-align: center;" data-aos = "fade-up" data-aos-delay = "300">
                 <i style = "font-size:3em;" class = "fas fa-hands-helping pb-4"></i><br>
                 Vulnerable population <br>with limited assistance
             </div>
-            <div class = "col-4" style = "text-align: center;">
+            <div class = "col-4" style = "text-align: center;" data-aos = "fade-up-left" data-aos-delay = "400">
                 <i style = "font-size:3em;" class="fas fa-people-arrows pb-4"></i><br>
                 Populated supermarkets
             </div>
@@ -133,79 +141,88 @@
     <div class = "container py-5">
         <div class = "row">
             <div class = "col-md-6 py-5">
-                <p class = "heading">Job opportunites</p><hr>
-                <span class = "px-5" style = "font-size:0.9em;">
+                <p class = "heading chartText" data-aos = "zoom-in-left">Job opportunites</p><hr>
+                <span class = "px-5" style = "font-size:0.9em;" data-aos = "zoom-in-left" data-aos-delay = "100">
                     There is a lack of job opportunities and the unemployment rate rose from 3.5% in February 2020, to 14.5% 
                     in March 2020, which is a 314% increase in the national unemployment rate 
-                    <a class = "prettyLink" style = "color:#386d42"href = "https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm">(U.S. Bureau of Labor Statistics)</a>
+                    <a class = "prettyLink" style = "background-color:#c3ddc8"href = "https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm">(U.S. Bureau of Labor Statistics)</a>
                 </span>
             </div>
-            <div class = "col-md-6" style = "position: relative;">
-                <div class = "chart">
-                    <div id="chart_div" style = "width: 100%; min-height: 450px;"></div>
-                </div>
+            <div class = "col-md-6" style = "position: relative;" data-aos = "zoom-in-right" data-aos-id = "animeChart" data-aos-duration = "500">
+                <div id="chart_div" class = "chart" style = "min-height: 400px; width: 100%"></div>
             </div>
         </div>
         <div class = "row">
-            <div class = "pt-5 col-md-6">
+            <div class = "pt-5 col-md-6" data-aos = "zoom-in-right" data-aos-duration= "500">
                 <img class = "img-fluid" src = "assets/undraw_empty_street_sfxm.png">
             </div>
-            <span class = "col-md-6 pt-5" style = "font-size:0.9em;">
-                <p class = "pt-5 heading">Limited Assistance</p><hr>
-                Vulnerable groups such as elderly people are highly at risk but assistance rates are limited; therefore, elders living alone have to buy food themselves, and many cannot travel to the supermarket.
+            <span class = "col-md-6 pt-5" style = "font-size:0.9em;" >
+                <p class = "pt-5 heading" data-aos = "zoom-in-left">Limited Assistance</p><hr>
+                <span data-aos = "zoom-in-left" data-aos-delay = "100">
+                    Vulnerable groups such as elderly people are highly at risk but assistance rates are limited; 
+                    therefore, elders living alone have to buy food themselves, and many cannot travel to the supermarket.
+                </span>
             </span>
         </div>
         <div class = "row" style = "font-size:0.9em;">
             <div class = "pt-5 col-md-6">
-                <p class = "pt-5 heading">Supermarket capacity</p><hr>
-                Supermarkets have limited capacity, so local supermarkets in areas where there is less competition are extremely populated, increasing the risk of becoming infected with COVID-19
+                <p class = "pt-5 heading" data-aos= "zoom-in-left">Supermarket capacity</p><hr>
+                <span data-aos = "zoom-in-left" data-aos-delay = "100">
+                    Supermarkets have limited capacity, so local supermarkets in areas where there is less competition are extremely populated, increasing the risk of becoming infected with COVID-19
+                </span>
             </div>
-            <div class = "col-md-6">
+            <div class = "col-md-6" data-aos = "zoom-in-right" data-aos-duration = "500">
                 <img class = "img-fluid" src = "assets/undraw_social_distancing_2g0u.png">
             </div>
         </div>
     </div>
-    <div class = "pb-5" style = "background-image: linear-gradient(180deg, #d9e2d9 0%, #d2e4d2 100%); font-family: 'ABeeZee', 'Montserrat', sans-serif;font-size:0.9em;">
+    <div id = "service" class = "pb-5" style = "background-image: linear-gradient(180deg, #d9e2d9 0%, #d2e4d2 100%); font-family: 'ABeeZee', 'Montserrat', sans-serif;font-size:0.9em;">
         <span class = "row pt-5 px-5">
-            <p class = "heading" style = "text-align: center;">Our Pitch</p>
+            <p class = "heading" style = "text-align: center;" data-aos = "fade-down" data-aos-duration = "400">Our Pitch</p>
         </span>
-        <span class = "ms-5" style = "font-size:1.1em;">Because of that, we decided to create <span style = "background-color:#5DB66D;color:#ffffff">EZ Fresh</span> to help out our community!</span>
+        <span class = "ms-5" style = "font-size:1.1em;" data-aos = "fade-right" data-aos-delay = "100">Because of that, we decided to create <span style = "background-color:#5DB66D;color:#ffffff">EZ Fresh</span> to help out our community!</span>
         <div class = "row p-5 row-cols-md-6 row-cols-3 g-6">
-            <div class = "col" style = "text-align: center;">
+            <div class = "col" style = "text-align: center;" data-aos = "fade-up-left" data-aos-delay="200">
                 <i style = "font-size:3em;" class="fas fa-map-marked-alt py-2"></i><br>
                 Supports local small businesses
             </div>
-            <div class = "col" style = "text-align: center;">
+            <div class = "col" style = "text-align: center;" data-aos = "fade-up-left" data-aos-delay="300">
                 <i style = "font-size:3em;" class="fas fa-shopping-basket py-2"></i><br>
                 Provides easy access to fresh produce
             </div>
-            <div class = "col" style = "text-align: center;">
+            <div class = "col" style = "text-align: center;" data-aos = "fade-up" data-aos-delay="400">
                 <i style = "font-size:3em;" class="fas fa-blender-phone py-2"></i><br>
                 Platforms for chiefs and influencers to promote
             </div>
-            <div class = "col" style = "text-align: center;">
+            <div class = "col" style = "text-align: center;" data-aos = "fade-up" data-aos-delay="400">
                 <i style = "font-size:3em;" class="fas fa-utensils py-2"></i><br>
                 Get local authentic products remotely 
             </div>
-            <div class = "col" style = "text-align: center;">
+            <div class = "col" style = "text-align: center;" data-aos = "fade-up-right" data-aos-delay="300">
                 <i style = "font-size:3em;" class="fas fa-money-bill-wave py-2"></i><br>
                 Creates new entry-level job opportunites
             </div>
-            <div class = "col" style = "text-align: center;">
+            <div class = "col" style = "text-align: center;" data-aos = "fade-up-right" data-aos-delay="200">
                 <i style = "font-size:3em;" class="far fa-user-circle py-2"></i><br>
                 Personalizes to minimize shopping time
             </div>
         </div>
     </div>
     <div class = "timeline">
-        <div class = "timeContainer left">
-            <div class = "timeContent">
-            <h3><i class="fas fa-search-location" style = "font-size:1.2em;"></i> Find your supermarket</h3>
-            <p>Find the supermarkets you know and love or try out new supermarkets you never had the chance to try before</p>
+        <div class = "timeContainer right">
+            <div class = "timeContent" data-aos = "flip-left" data-aos-duration = "400">
+                <h3><i class="fas fa-search-location" style = "font-size:1.2em;"></i> Find your supermarket</h3>
+                <p>Find the supermarkets you know and love or try out new supermarkets you never had the chance to try before</p>
+            </div>
+        </div>
+        <div class = "timeContainer smallContainer left smallleft" style = "width: 40%;left:10%">
+            <div class = "timeContent d-flex" data-aos = "flip-right" data-aos-duration = "400">
+                <i class="fas fa-user-edit pe-3" style = "align-self: center;font-size: 3em;"></i>
+                Check out reviews from other users to get a feel of what you are buying
             </div>
         </div>
         <div class = "timeContainer right">
-            <div class = "timeContent">
+            <div class = "timeContent" data-aos = "flip-left" data-aos-duration = "400">
             <h3><i class="fas fa-cart-plus" style = "font-size:1.2em;"></i> Place your order</h3>
             <p>Browse around numerous discount and supermarkets available for the best or cheapest produces</p>
             <ul>
@@ -217,26 +234,45 @@
             </ul>
             </div>
         </div>
-        <div class = "timeContainer left" style = "width: 40%;left: 10%;">
-            <div class = "timeContent">
+        <div class = "timeContainer smallContainer left smallleft" style = "width: 40%;left:10%">
+            <div class = "timeContent d-flex" data-aos = "flip-right" data-aos-duration = "400">
+                <i class="fas fa-atlas pe-3" style = "align-self:center;font-size:3em;"></i>
                 There are also Weekly Recipe Haul provided by chiefs and influencers for inspiration. Check them out!
             </div>
         </div>
         <div class = "timeContainer right">
-            <div class = "timeContent">
+            <div class = "timeContent" data-aos = "flip-left" data-aos-duration = "400">
                 <h3><i class="fas fa-tasks" style = "font-size:1.2em;"></i> Track your order</h3>
                 <p>Get the estimate time or schedule when you would like your groceries</p>
             </div>
         </div>
-        <div class = "timeContainer left" style = "width: 40%;left: 10%;">
-            <div class = "timeContent">
+        <div class = "timeContainer smallContainer left smallleft" style = "width: 40%;left:10%">
+            <div class = "timeContent d-flex" data-aos = "flip-right" data-aos-duration = "400">
+                <i class="fas fa-receipt pe-3" style = "align-self: center;font-size: 3em;"></i>
                 You can also opt to get your receipts back!
+            </div>
+        </div>
+        <div class = "timeContainer right">
+            <div class = "timeContent" data-aos = "flip-left" data-aos-duration = "400">
+                <h3><i class="fas fa-clipboard-check" style = "font-size:1.2em;"></i> You're done!</h3>
+                <p>No need to worry about buying groceries anymore</p>
             </div>
         </div>
     </div>
     <span class = "d-flex" style = "justify-content: center;">
-        <a href = "login.html" style = "text-decoration:none;"><button class = "btn">Join us now! It's free</button></a>
+        <span class = "leave my-3" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;" data-aos = "slide-left" data-aos-duration = "500">&nbsp;</span>
+        <a href = "login.html" style = "text-decoration:none;"><button class = "btn p-3 mx-3" style = "letter-spacing:1px;">Join us now! It's free</button></a>
+        <span class = "leave my-3" data-aos = "slide-right" data-aos-duration = "500">&nbsp;</span>
     </span>
+    <div class = "mx-5 pt-5 d-flex row" style = "justify-content: center;">
+        <div class = "col-md-5" style = "align-self: center;text-align: center;" data-aos = "slide-right" data-aos-duration="500">
+            <p class = "heading">Want to poke around and see what kind of local supermarket awaits you?</p>
+        </div>
+        <div class = "col-md-7" data-aos = "slide-left" data-aos-delay = "100" data-aos-duration = "500">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41376.03781259373!2d-73.9561886494233!3d40.75847587006942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258bf08488f6b%3A0x618706a9142daa0d!2sUpper%20East%20Side%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1617145066335!5m2!1sen!2sus" 
+            style="border:0;box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25);min-height:450px;width:100%;" allowfullscreen="true" loading="lazy"></iframe>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class = "endFooter mt-4">
         <div class="row">
@@ -299,74 +335,129 @@
         </div>
     </footer>
 </body>
-
 <script>
-// ['Month', 'total', 'Men, 20 years and over','Women, 20 years and over','16 to 19 years old','White','Black or African American','Asian','Hispanic or Latino'],
-// ['Jan 2020', 3.5, 3.1, 3.2, 12.6, 3.0, 6.1, 3.1, 4.3],
-// ['Feb 2020', 3.5, 3.2, 3.1, 11.5, 3.0, 6.0, 2.4, 4.4],
-// ['Mar 2020', 4.4, 4.1, 4.0, 14.1, 3.9, 6.8, 4.1, 6.0],
-// ['Apr 2020', 14.8, 13.1, 15.5, 32.1, 14.1, 16.7, 14.5, 18.9],
-// ['May 2020', 13.3, 11.6, 13.9, 29.6, 12.3, 16.7, 14.9, 17.6],
-// ['June 2020', 11.1, 10.2, 11.3, 22.6, 10.1, 15.3, 13.9, 14.5],
-// ['July 2020',10.2, 9.4, 10.4, 19.1, 9.2, 14.4, 11.9, 12.7],
-// ['Aug 2020', 8.4, 8.0, 8.3, 16.4, 7.4, 12.8, 10.6, 10.5],
-// ['Sept 2020', 7.8, 7.3, 7.7, 16.3, 7.0, 12.0, 8.8, 10.3],
-// ['Oct 2020', 6.9, 6.7, 6.5, 14.0, 6.0, 10.8, 7.6, 8.8],
-// ['Nov 2020', 6.7, 6.6, 6.2, 13.9, 5.9, 10.3, 6.7, 8.4],
-// ['Dec 2020', 6.7, 6.4, 6.3, 16.0, 6.0, 9.9, 5.9, 9.3],
-// ['Jan 2021', 6.3, 6.0, 6.0, 14.8, 5.7, 9.2, 6.6, 8.6],
-// ['Feb 2021', 6.2, 6.0, 5.9, 13.9, 5.6, 9.9, 5.1, 8.5]
+    AOS.init();
 
-google.charts.load('current', {packages: ['corechart', 'bar']});
-google.charts.setOnLoadCallback(drawStacked);
+    document.addEventListener("aos:in:animeChart", ({ detail }) => {
+        drawStacked();
+    });
 
-function drawStacked() {
-    var data = google.visualization.arrayToDataTable([
-        ['Month', 'rate(%)'],
-        ['Jan 2020', 3.5],
-        ['Feb 2020', 3.5],
-        ['Mar 2020', 4.4],
-        ['Apr 2020', 14.8],
-        ['May 2020', 13.3],
-        ['June 2020', 11.1],
-        ['July 2020',10.2],
-        ['Aug 2020', 8.4],
-        ['Sept 2020', 7.8],
-        ['Oct 2020', 6.9],
-        ['Nov 2020', 6.7],
-        ['Dec 2020', 6.7],
-        ['Jan 2021', 6.3],
-        ['Feb 2021', 6.2]
-    ]);
+    // Responsive navbar
+    if(document.querySelector(".navbar") !== null){
+        const navbar = document.querySelector(".navbar");
+        window.onscroll = function(e) {
+            if (this.scrollY < 45){
+                switchNavBar();
+            }
+            else {
+                navbar.classList.remove("topNavBar");
+                // "false" for down and "true" for up
+                if (this.oldScroll > this.scrollY){
+                    navbar.classList.remove("formHidden");
+                }
+                else{
+                    navbar.classList.add("formHidden");
+                }
+            }
+        this.oldScroll = this.scrollY;
+        }
+    }
+    // remove transparency when toggle is opened
+    function switchNavBar(){
+        if (this.scrollY < 45){
+            if (document.querySelector(".navbar-toggler").getAttribute("aria-expanded") === "true" || false){
+                document.querySelector(".navbar").classList.remove("topNavBar");
+            }
+            else{
+                document.querySelector(".navbar").classList.add("topNavBar");
+            }
+        }
+    }
 
-    var options = {
-        title: 'Civilian unemployment rate',
-        isStacked: true,
-        hAxis: {
-          title: 'Month'
-        },
-        vAxis: {
-          title: 'Percent (%)'
-        },
-        legend: 'none',
-        backgroundColor: '#F3ECE7',
-        fontName: 'ABeeZee'
-        // annotations: {
-        //     textStyle: {
-        //         color: 'black',
-        //         fontSize: 11,
-        //     },
-        //     alwaysOutside: true
-        // }
-    };
-    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-}
-document.addEventListener("resize", resizeChart);
-function resizeChart(){
-    console.log("resizing the chart");
-    drawStacked();
-}
+    // ['Month', 'total', 'Men, 20 years and over','Women, 20 years and over','16 to 19 years old','White','Black or African American','Asian','Hispanic or Latino'],
+    // ['Jan 2020', 3.5, 3.1, 3.2, 12.6, 3.0, 6.1, 3.1, 4.3],
+    // ['Feb 2020', 3.5, 3.2, 3.1, 11.5, 3.0, 6.0, 2.4, 4.4],
+    // ['Mar 2020', 4.4, 4.1, 4.0, 14.1, 3.9, 6.8, 4.1, 6.0],
+    // ['Apr 2020', 14.8, 13.1, 15.5, 32.1, 14.1, 16.7, 14.5, 18.9],
+    // ['May 2020', 13.3, 11.6, 13.9, 29.6, 12.3, 16.7, 14.9, 17.6],
+    // ['June 2020', 11.1, 10.2, 11.3, 22.6, 10.1, 15.3, 13.9, 14.5],
+    // ['July 2020',10.2, 9.4, 10.4, 19.1, 9.2, 14.4, 11.9, 12.7],
+    // ['Aug 2020', 8.4, 8.0, 8.3, 16.4, 7.4, 12.8, 10.6, 10.5],
+    // ['Sept 2020', 7.8, 7.3, 7.7, 16.3, 7.0, 12.0, 8.8, 10.3],
+    // ['Oct 2020', 6.9, 6.7, 6.5, 14.0, 6.0, 10.8, 7.6, 8.8],
+    // ['Nov 2020', 6.7, 6.6, 6.2, 13.9, 5.9, 10.3, 6.7, 8.4],
+    // ['Dec 2020', 6.7, 6.4, 6.3, 16.0, 6.0, 9.9, 5.9, 9.3],
+    // ['Jan 2021', 6.3, 6.0, 6.0, 14.8, 5.7, 9.2, 6.6, 8.6],
+    // ['Feb 2021', 6.2, 6.0, 5.9, 13.9, 5.6, 9.9, 5.1, 8.5]
+
+    google.charts.load('current', {packages: ['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawStacked);
+
+    function drawStacked() {
+        var data = google.visualization.arrayToDataTable([
+            ['Month', 'rate(%)'],
+            ['Jan 2020', 3.5],
+            ['Feb 2020', 3.5],
+            ['Mar 2020', 4.4],
+            ['Apr 2020', 14.8],
+            ['May 2020', 13.3],
+            ['June 2020', 11.1],
+            ['July 2020',10.2],
+            ['Aug 2020', 8.4],
+            ['Sept 2020', 7.8],
+            ['Oct 2020', 6.9],
+            ['Nov 2020', 6.7],
+            ['Dec 2020', 6.7],
+            ['Jan 2021', 6.3],
+            ['Feb 2021', 6.2]
+        ]);
+
+        var options = {
+            title: 'Civilian unemployment rate',
+            titleTextStyle: {
+                color: 'grey',   
+                fontSize: 18,
+                bold: true  
+            },
+            isStacked: true,
+            chartArea: {
+                height: '66%',
+                width: '66%',
+                // top: '20%',
+                // left: '20%',
+            },
+            colors: ['#bbe7c3'],
+            hAxis: {
+                slantedText:true, 
+                slantedTextAngle: 45 
+            },
+            vAxis: {
+                title: 'Percent (%)'
+            },
+            gridlines: { count: 10 },
+            legend: 'none',
+            backgroundColor: '#F3ECE7',
+            fontName: 'ABeeZee',
+            // annotations: {
+            //     textStyle: {
+            //         color: 'black',
+            //         fontSize: 11,
+            //     },
+            //     alwaysOutside: true
+            // }
+            animation:{
+                duration: 1000,
+                easing: 'out',
+                "startup": true
+            },
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    }
+    window.addEventListener("resize", e => {
+        console.log("resizing the chart");
+        drawStacked();
+    });
 </script>
 
 </html>

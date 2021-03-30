@@ -9,7 +9,7 @@ if(document.querySelector(".navbar") !== null){
     const navbar = document.querySelector(".navbar");
     window.onscroll = function(e) {
         if (this.scrollY < 45){
-            navbar.classList.add("topNavBar");
+            switchNavBar();
         }
         else {
             navbar.classList.remove("topNavBar");
@@ -35,6 +35,7 @@ function switchNavBar(){
         }
     }
 }
+
 // Login
 // creates error message on top of the form
 function setFormMessage(formElement, msg){

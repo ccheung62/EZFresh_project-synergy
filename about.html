@@ -24,7 +24,7 @@
         crossorigin="anonymous"> 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Favicon -->
     <link rel= "icon" href = "assets/circle-icon.png">
     <link rel= "stylesheet" href = "style.css">
@@ -70,7 +70,15 @@
                         <li><a class="dropdown-item" href="about.html#aboutTeam">Our Team</a></li>
                     </ul>
                 </li>
-                <li class = "nav-item"><a class= "nav-link" href = "product.html" title = "Product page">Product</a></li>
+                <li class = "nav-item dropdown">
+                    <a class= "nav-link" href = "product.html" title = "Product page">Product
+                        <span class= "dropdown-toggle" id = "navProductDropMenu" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navProductDropMenu">
+                        <li><a class="dropdown-item" href="product.html#problem">Problem</a></li>
+                        <li><a class="dropdown-item" href="product.html#service">Our Service</a></li>
+                    </ul>
+                </li>
                 <li class = "nav-item"><a class= "nav-link" href = "faq.html" title = "FAQ">FAQ</a></li>
                 <li class = "nav-item"><a class= "nav-link" href = "contact.html" title = "Contact page">Contact Us</a></li>
                 <a class = "nav-item" href = "login.html" title = "Login/Sign Up Page"><button class = "btn me-3">Sign Up</button></a>
