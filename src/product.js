@@ -81,12 +81,9 @@ function drawStacked() {
             fontSize: 18,
             bold: true  
         },
-        isStacked: true,
         chartArea: {
             height: '66%',
-            width: '66%',
-            // top: '20%',
-            // left: '20%',
+            width: '66%'
         },
         colors: ['#bbe7c3'],
         hAxis: {
@@ -96,17 +93,9 @@ function drawStacked() {
         vAxis: {
             title: 'Percent (%)'
         },
-        gridlines: { count: 10 },
         legend: 'none',
         backgroundColor: '#F3ECE7',
         fontName: 'ABeeZee',
-        // annotations: {
-        //     textStyle: {
-        //         color: 'black',
-        //         fontSize: 11,
-        //     },
-        //     alwaysOutside: true
-        // }
         animation:{
             duration: 1000,
             easing: 'out',
@@ -116,7 +105,8 @@ function drawStacked() {
     var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
     chart.draw(data, options);
 }
+
+// Make the graph responsive
 window.addEventListener("resize", e => {
-    console.log("resizing the chart");
     drawStacked();
 });
