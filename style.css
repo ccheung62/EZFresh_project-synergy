@@ -95,9 +95,15 @@ body{
 } */
 .loginForm{
     font-family: 'ABeeZee', 'Montserrat', sans-serif;
+    /* background-image: linear-gradient(120deg, #ebebeb 0%, #96e6a1 100%); */
+    background-image: url(assets/flower-4865379_1920.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    position:relative;
     display:flex;
-    align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    min-width: auto;
 }
 .formMsg{
     text-align: center;
@@ -449,33 +455,78 @@ hr{
     border-radius: 1.5rem 0rem 1.5rem 0rem;
     border: 5px solid #e6e9e6;
 }
+input{
+    border: transparent !important;
+    background-color: rgba(255, 255, 255) !important;
+    transition: all 0.3s;
+}
+/* input:focus{
+    border-bottom: 3px solid rgba(95,216,64,0.25) !important;
+} */
 /* Change font-size for price-tag background text */
 @media (min-width: 375px){
     .startText{ font-size:medium; }
+    .form{
+        justify-content:center;
+        align-items: center;
+    }
 }
 @media (min-width: 576px){
     .startText{ font-size:x-large; }
+    .form{
+        justify-content:center;
+        align-items: center;
+    }
 }
 @media (min-width: 768px){
     .startText{ font-size:xx-large; }
     .chart{
         position:absolute;
-        top: -40%;
+        top: -36%;
     }
+    .form{
+        justify-content:center;
+        align-items: center;
+    }
+    /* .loginImg{
+        max-height: 450px;
+        position: absolute;
+        top:20%;
+    } */
 }
 @media (min-width: 992px){
     .startText{ font-size:large; }
     .chart{
         position:absolute;
-        top: -40%;
+        top: -36%;
     }
+    .form{
+        padding-bottom:8% !important;
+    }
+    /* .loginImg{
+        max-height: 450px;
+        position: absolute;
+        top:20%;
+    } */
 }
 @media (min-width: 1200px){
     .startText{ font-size:x-large; }
     .chart{
         position:absolute;
-        top: -40%;
+        top: -36%;
     }
+    .form{
+        padding-bottom:8% !important;
+    }
+    /* .form{
+        position:absolute;
+        top:40%;
+    } */
+    /* .loginImg{
+        max-height: 450px;
+        position: absolute;
+        top:20%;
+    } */
 }
 
 /* Change color for different action handlers */
@@ -489,7 +540,7 @@ hr{
     border-bottom: 2px solid #5DB66D !important;
     color:#5DB66D !important;
 }
-:focus{
+.navbar-toggler:focus,  input:focus, .btn:focus{
     border-color:#5DB66D !important;
     outline: none;
     box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important; 

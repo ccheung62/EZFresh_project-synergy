@@ -34,83 +34,96 @@
         crossorigin="anonymous">
     </script>
     <script defer src = "src/script.js"></script>
+    <script defer type = "module" src = "./src/login.js"></script>
     <!-- Fonts from fontawesome -->
     <script src="https://kit.fontawesome.com/28ae02582e.js" crossorigin="anonymous"></script>
 </head>
 
-<body style = "background-image: linear-gradient(120deg, #ebebeb 0%, #96e6a1 100%);background-size: cover;background-repeat:no-repeat;min-height:100vh;">
-    <!-- <div class="blurImg"> -->
-        <a href = "index.html"><button class = "btn mx-5 mt-5">← Back</button></a>
-        <div class="loginForm">
-            <form class ="form leave d-flex p-4 card-colored" id = "login">
-                <div class = "p-3" style = "text-align: center;">
-                    <h1 class = "formMsg">
-                        <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
-                        Login
-                        <span class = "leave"></span>
-                    </h1>
-                    <div class="formErr text-danger"></div>
-                    <div style = "text-align:start;">Username</div>
-                    <!-- divided up for idenification in javascript -->
-                    <div> 
-                        <div class = "formErrMsg"></div>
-                        <input type="text" class = "username loginInput" size = "35" placeholder = "Username or email">
-                    </div>
-                    <div style = "text-align:start;">Password</div>
-                    <div>
-                        <div class = "formErrMsg"></div>
-                        <input type="password" class = "password loginInput" size = "35" placeholder = "Password">
-                    </div>
-                    <button type = "submit" class="btn my-2 px-5">Login</button>
-
-                    <p class = "formOption">
-                        <a href = "#" class = "prettyLink">Forgot your password?</a>
-                    </p>
-                    <p class = "formOption">
-                        <a id="signUpLink" href = "" class = "prettyLink">Don't have an account? Sign up</a>
-                    </p>
-                </div>
-                <img class = "secimg d-lg-block d-none" style = "max-height: 300px" src = "assets/undraw_unlock_24mb.png" >
-            </form>
-            <!-- Sign up form -->
-            <form class ="form leave d-flex card-colored p-4 formHidden" id = "signup">
-                <div style = "text-align: center;">
-                    <h1 class = "formMsg">
-                        <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
-                        Sign Up
-                        <span class = "leave"></span>
-                    </h1>
-                    <div class="formErr text-danger"></div>
-                    <div style = "text-align:start">Username</div>
-                    <div>
-                        <div class = "formErrMsg"></div>
-                        <input type="text" class = "loginInput username" autofocus size = "35" placeholder = "Username">
-                    </div>
-                    <div style = "text-align:start;">Email Address</div>
-                    <div>
-                        <div class = "formErrMsg"></div>
-                        <input type="text" class = "loginInput emailadd" size = "35" placeholder = "Email Address">
-                    </div>
-                    <div style = "text-align:start;">Password</div>
-                    <div>
-                        <div class = "formErrMsg"></div>
-                        <input type="password" class = "loginInput password" size = "35" placeholder = "Password">
-                    </div>
-                    <div style = "text-align:start;">Confirm Password</div>
-                    <div>
-                        <div class = "formErrMsg"></div>
-                        <input type="password" class = "loginInput confirmpass" size = "35" placeholder = "Confirm Password">
-                    </div>
-                    <button type = "submit" class="btn my-2">Sign up</button>
-
-                    <p class = "formOption">
-                        <a id="loginLink" href = "" class = "prettyLink">Already have an account? Sign in</a>
-                    </p>
-                </div>
-                <img class = "secimg d-lg-block d-none" style = "max-height: 450px" src = "assets/undraw_referral_4ki4.png" >
-            </form>
+<body>
+    <div class = "loginForm" id = "login">
+        <a href = "index.html" class = "btn d-block" style = "text-decoration:none;background-color:#ffffff;position:absolute;top:4%;left:4%" title = "Back to home page">
+            <i class="fas fa-arrow-circle-left"></i> Back
+        </a>
+        <div class = "d-lg-flex d-none" style = "align-items:flex-end;justify-content: flex-end">
+                <img style = "max-height:500px;" src = "assets/undraw_remotely_2j6y.png">
         </div>
-    <!-- </div> -->
+        <form class ="form d-flex" style = "flex-direction:column;text-align:center;padding:0px">
+            <h1 class = "formMsg">
+                <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
+                Login
+                <span class = "leave"></span>
+            </h1>
+            <div class = "d-flex" style = "flex-direction:column;justify-content: flex-start;">
+                <div class="formErr text-danger"></div>
+                <div style = "text-align:start;background-color:#eeeeee"><i class="fas fa-user-circle"></i>  Username</div>
+                <!-- divided up for idenification in javascript -->
+                <div> 
+                    <div class = "formErrMsg"></div>
+                    <input type="text" class = "username loginInput" size = "33" placeholder = "Username or email">
+                </div>
+                <div style = "text-align:start;background-color:#eeeeee"><i class="fas fa-lock"></i>  Password</div>
+                <div>
+                    <div class = "formErrMsg"></div>
+                    <input type="password" class = "password loginInput" size = "30" placeholder = "Password">
+                    <span onclick = "viewPassword(this.parentElement)"><i class="fas fa-eye" style = "cursor: pointer"></i></span>
+                </div>
+            </div>
+            <button class="btn px-5 my-2">Login</button>
+
+            <p class = "formOption">
+                <a href = "#" class = "prettyLink" style = "border:transparent!important">Forgot your password?</a>
+            </p>
+            <p class = "formOption">
+                <a id="signUpLink" href = "" class = "prettyLink" style = "border:transparent!important">Don't have an account? Sign up</a>
+            </p>
+        </form>
+    </div>
+    <div class = "loginForm formHidden" id = "signup">
+        <a href = "index.html" class = "btn d-block" style = "text-decoration:none;background-color:#ffffff;position:absolute;top:4%;left:4%" title = "Back to home page">
+            <i class="fas fa-arrow-circle-left"></i> Back
+        </a>
+        <div class = "d-lg-flex d-none" style = "align-items:flex-end;justify-content: flex-end">
+            <img style = "max-height:500px;" src = "assets/undraw_referral_4ki4.png">
+        </div>
+        <!-- Sign up form -->
+        <form class ="form d-flex" style = "flex-direction:column;text-align:center;padding:0px">
+            <h1 class = "formMsg">
+                <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
+                Sign Up
+                <span class = "leave"></span>
+            </h1>
+            <div class = "d-flex" style = "flex-direction:column;justify-content: flex-start;">
+                <div class="formErr text-danger"></div>
+                <div style = "text-align:start;background-color:#eeeeee"><i class="fas fa-user-circle"></i>  Username</div>
+                <div>
+                    <div class = "formErrMsg"></div>
+                    <input type="text" class = "loginInput username" size = "33" placeholder = "Username">
+                </div>
+                <div style = "text-align:start;background-color:#eeeeee"><i class="fas fa-envelope"></i>  Email Address</div>
+                <div>
+                    <div class = "formErrMsg"></div>
+                    <input type="text" class = "loginInput emailadd" size = "33" placeholder = "Email Address">
+                </div>
+                <div style = "text-align:start;background-color:#eeeeee"><i class="fas fa-lock"></i>  Password</div>
+                <div>
+                    <div class = "formErrMsg"></div>
+                    <input type="password" class = "loginInput password" size = "30" placeholder = "Password">
+                    <span onclick = "viewPassword(this.parentElement)"><i class="fas fa-eye" style = "cursor: pointer"></i></span>
+                </div>
+                <div style = "text-align:start;background-color:#eeeeee"><i class="fas fa-lock"></i>  Confirm Password</div>
+                <div>
+                    <div class = "formErrMsg"></div>
+                    <input type="password" class = "loginInput confirmpass" size = "30" placeholder = "Confirm Password">
+                    <span onclick = "viewPassword(this.parentElement)"><i class="fas fa-eye" style = "cursor: pointer"></i></span>
+                </div>
+            </div>
+            <button type = "submit" class="btn px-5 my-2">Sign up</button>
+
+            <p class = "formOption">
+                <a id="loginLink" href = "" class = "prettyLink">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
 </body>
 
 </html>

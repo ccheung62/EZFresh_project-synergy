@@ -1,40 +1,6 @@
-AOS.init();
-
 document.addEventListener("aos:in:animeChart", ({ detail }) => {
     drawStacked();
 });
-
-// Responsive navbar
-if(document.querySelector(".navbar") !== null){
-    const navbar = document.querySelector(".navbar");
-    window.onscroll = function(e) {
-        if (this.scrollY < 45){
-            switchNavBar();
-        }
-        else {
-            navbar.classList.remove("topNavBar");
-            // "false" for down and "true" for up
-            if (this.oldScroll > this.scrollY){
-                navbar.classList.remove("formHidden");
-            }
-            else{
-                navbar.classList.add("formHidden");
-            }
-        }
-    this.oldScroll = this.scrollY;
-    }
-}
-// remove transparency when toggle is opened
-function switchNavBar(){
-    if (this.scrollY < 45){
-        if (document.querySelector(".navbar-toggler").getAttribute("aria-expanded") === "true" || false){
-            document.querySelector(".navbar").classList.remove("topNavBar");
-        }
-        else{
-            document.querySelector(".navbar").classList.add("topNavBar");
-        }
-    }
-}
 
 // ['Month', 'total', 'Men, 20 years and over','Women, 20 years and over','16 to 19 years old','White','Black or African American','Asian','Hispanic or Latino'],
 // ['Jan 2020', 3.5, 3.1, 3.2, 12.6, 3.0, 6.1, 3.1, 4.3],
