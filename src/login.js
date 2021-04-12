@@ -1,5 +1,5 @@
-let username;
-let loggedin = false;
+var username;
+var loggedin = false;
 
 // Login
 // toggle the view password
