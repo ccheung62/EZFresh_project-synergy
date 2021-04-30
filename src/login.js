@@ -106,8 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (loginForm.querySelector(".username").value.length > 0 && loginForm.querySelector(".password").value === "password"){
                 username = loginForm.querySelector(".username").value;
                 loggedin = true;
-                console.log("I changed the variables", username, loggedin);
-                // window.location.href = "home.html";
+                window.location.href = "home.html";
             }
             else {
                 // let the user know how to login after 5 attempts
@@ -133,8 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (requirement){
                 username = createForm.querySelector(".username").value;
                 loggedin = true;
-                console.log("I changed the variables", username, loggedin);
-                // window.location.href = "home.html";
+                window.location.href = "home.html";
             }
             else{
                 setFormMessage(createForm, "Requirements are not fullfilled");

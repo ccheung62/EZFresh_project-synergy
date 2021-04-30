@@ -4,13 +4,13 @@
     <meta charset = "utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Description of EZ Fresh -->
-    <title>EZ Fresh。Shopping made safe and easier at your fingertip!</title>
+    <title>FAQ Page。EZ Fresh</title>
     <meta name="description" content="Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
     convenience of ordering takeout">
     <!-- Social Media description -->
     <meta property="og:type" content = "website">
-    <meta property="og:url" content = "https://ccheung62.github.io/EZFresh_project-synergy/">
-    <meta property="og:title" content = "EZ Fresh">
+    <meta property="og:url" content = "https://ccheung62.github.io/EZFresh_project-synergy/faq.html">
+    <meta property="og:title" content = "FAQ Page。EZ Fresh">
     <meta property="og:description" content = "Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
     convenience of ordering takeout">
     <meta property="og:image" content = "https://ccheung62.github.io/EZFresh_project-synergy/assets/logo.png">
@@ -41,7 +41,7 @@
 <body>
     <!-- Navigation bar -->
     <nav class="navbar topNavBar navbar-expand-lg navbar-light fixed-top py-3 px-5 container-fluid">
-        <a class = "navbar-brand" href = "index.html" title="Home page">
+        <a class = "navbar-brand" href = "index.html" title="Home page" style = "background-color: transparent !important;">
             <img src = "assets/icon.png" height = 40px alt="EZ Fresh icon">
             <i>EZ </i>Fresh
         </a>
@@ -86,31 +86,31 @@
         </div>
     </nav>
 
-    <div class = "sec row px-3 py-5" style = "background-image: linear-gradient(180deg, #d9e2d9 0%, #d2e4d2 100%)">
-        <div class = "col-2" style = "padding-top:5%">
-            <img style = "max-height:17vw" src = "assets/undraw_Faq_re_31cw-left.png">
+    <div class = "sec px-3 py-5 d-flex" style = "background-image: linear-gradient(180deg, #d9e2d9 0%, #d2e4d2 100%);justify-content: space-around;">
+        <div style = "padding-top:5%;padding-right:0px;padding-left:0px;" data-aos = "fade-right" data-aos-duration = "1000">
+            <img class = "secimg" style = "max-height:17vw;text-align:right;" src = "assets/undraw_Faq_re_31cw-left.png">
         </div>
-        <div class = "col-8" style = "text-align: center;">
-            <p style = "font-size:2.5em;">Frequently Asked Questions</p>
+        <div style = "text-align: center;">
+            <p class = "d-inline-block boxText swipeAnimeStart" style = "font-size:2.5em;position:relative">FAQ</p>
             <p style = "position:relative;color:#444444">Here are some of EZ Fresh's most frequently asked questions</p>
         </div>
-        <div class = "col-2" style = "padding-top:5%">
+        <div style = "padding-top:5%" data-aos= "fade-left" data-aos-delay = "100" data-aos-duration = "1000">
             <img style = "max-height:20vw" src = "assets/undraw_Faq_re_31cw-right.png">
         </div>
     </div>
 
     <nav class = "pb-5">
         <div class="nav nav-tabs d-flex" style = "justify-content:center;border:transparent;font-size:1.2em;" id="nav-tab" role="tablist">
-            <button class="nav-link px-5 active" id="navUserTab" style = "border:transparent;border-radius:0rem 0rem 0.75rem 0.75rem;" data-bs-toggle="tab" data-bs-target="#navUser" type="button" role="tab" aria-controls="navUser" aria-selected="true">
+            <button class="nav-link faq-tab px-5 active" id="navUserTab" style = "border:transparent;border-radius:0rem 0rem 0.75rem 0.75rem;" data-bs-toggle="tab" data-bs-target="#navUser" type="button" role="tab" aria-controls="navUser" aria-selected="true">
                 For Users
             </button>
-          <button class="nav-link px-5" id="navSupermarketTab" style = "border:transparent;border-radius:0rem 0rem 0.75rem 0.75rem;" data-bs-toggle="tab" data-bs-target="#navSupermarket" type="button" role="tab" aria-controls="navSupermarket" aria-selected="false">For Supermarkets</button>
+          <button class="nav-link faq-tab px-5" id="navSupermarketTab" style = "border:transparent;border-radius:0rem 0rem 0.75rem 0.75rem;" data-bs-toggle="tab" data-bs-target="#navSupermarket" type="button" role="tab" aria-controls="navSupermarket" aria-selected="false">For Supermarkets</button>
         </div>
     </nav>
     <div class = "container">
         <div class="tab-content" id="nav-tabContent" style = "font-family: 'ABeeZee', 'Montserrat', sans-serif;">
             <div class="tab-pane fade show active" id="navUser" role="tabpanel" aria-labelledby="navUserTab">
-                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".uquestion1" aria-expanded="false" aria-controls="uquestion1">
+                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".uquestion1" aria-expanded="false" onclick = "switchPlus(this)"aria-controls="uquestion1" data-aos = "slide-right" data-aos-anchor=".show">
                     How are items and supermarkets suggested to me - is it customized or tailored to my preferences/location? 
                     <i class="far fa-plus-square" style = "text-align:right;"></i>
                 </p><hr>
@@ -118,7 +118,7 @@
                     Items and supermarkets are suggested to you are based your prefered supermarkets, your shopping history, and what similar users had liked. 
                     Everything is kept annyomous so no need to worry about your privacy! 
                 </p>
-                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".uquestion2" aria-expanded="false" aria-controls="uquestion2">
+                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".uquestion2" aria-expanded="false" onclick = "switchPlus(this)"aria-controls="uquestion2" data-aos = "slide-right" data-aos-delay="100" data-aos-anchor = ".show">
                     How do I reach out if there are issues regarding my order/ employee misconduct?
                     <i class="far fa-plus-square" style = "text-align:right;"></i>
                 </p><hr>
@@ -127,7 +127,7 @@
                     investigated and refunded. Issues regarding employee misconduct will be investigated and taken seriously. Depending on the situation, disciplinary 
                     actions will be put in place including but not limited to; suspension/demotion, fired, verbal warnings,  detraction of benefits, etc. 
                 </p>
-                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".uquestion3" aria-expanded="false" aria-controls="uquestion3">
+                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".uquestion3" aria-expanded="false" onclick = "switchPlus(this)"aria-controls="uquestion3" data-aos = "slide-right" data-aos-delay="200" data-aos-anchor = ".show">
                     Will my personal information be sold?
                     <i class="far fa-plus-square" style = "text-align:right;"></i>
                 </p><hr>
@@ -135,7 +135,7 @@
                     Your personal information <strong>will NOT be sold</strong>. It is against our privacy protection policies. Your information will be used for your orders such as address 
                     and location. 
                 </p>
-                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".uquestion4" aria-expanded="false" aria-controls="uquestion4">
+                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".uquestion4" aria-expanded="false" onclick = "switchPlus(this)"aria-controls="uquestion4" data-aos = "slide-right" data-aos-delay="300" data-aos-anchor = ".show">
                     How easy is navigating the app and setting it up? 
                     <i class="far fa-plus-square" style = "text-align:right;"></i>
                 </p><hr>
@@ -146,7 +146,7 @@
                 </p>
             </div>
             <div class="tab-pane fade" id="navSupermarket" role="tabpanel" aria-labelledby="navSupermarketTab">
-                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".squestion1" aria-expanded="false" aria-controls="squestion1">
+                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".squestion1" aria-expanded="false" aria-controls="squestion1" data-aos = "slide-right">
                     How could EZ Fresh benefit our business?
                     <i class="far fa-plus-square" style = "text-align:right;"></i>
                 </p><hr>
@@ -155,7 +155,7 @@
                     had brought similar products before. Additionally, we would give you data and insight on the success and popularity of different products and discounts to help you with 
                     your marketing strategies! Our users could also rate and comment on your supermarket so you could get a sample view of your customers!
                 </p>
-                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".squestion2" aria-expanded="false" aria-controls="squestion2">
+                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".squestion2" aria-expanded="false" aria-controls="squestion2" data-aos = "slide-right" data-aos-delay = "100" data-aos-anchor = "squestion1">
                     How much does it cost to use EZ Fresh?
                     <i class="far fa-plus-square" style = "text-align:right;"></i>
                 </p><hr>
@@ -163,7 +163,7 @@
                     EZ Fresh takes a 10-15% commission for each purchase. 10% if the purchase was $50 or less and 15% if the purchase is $50+. EZ Fresh's ultimate goal to is support local 
                     supermarkets so we try to keep the commission at a lower percentage than others!
                 </p>
-                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".squestion3" aria-expanded="false" aria-controls="squestion3">
+                <p class = "d-flex" style = "justify-content:space-between" type = "button" data-bs-toggle="collapse" data-bs-target=".squestion3" aria-expanded="false" aria-controls="squestion3"data-aos = "slide-right" data-aos-delay = "200" data-aos-anchor = "squestion1">
                     What do I need to start using EZ Fresh?
                     <i class="far fa-plus-square" style = "text-align:right;"></i>
                 </p><hr>

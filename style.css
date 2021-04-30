@@ -20,6 +20,13 @@ body{
     border: transparent !important;
     backdrop-filter:unset;
 }
+.navbar-brand{
+    background-color: transparent !important;
+}
+.topNavBar .navbar-brand{
+    background-color: #f2f2f2 !important;
+    transition: all 0.5s;
+}
 .nav-link {
     display:inline-block;
     position: relative;
@@ -112,10 +119,10 @@ body{
 .loginInput{
     margin:0.5rem;
     padding:0.5rem;
-    background-color:#f5f5f5;
     border-radius: 1rem 0rem 1rem 0rem;
-    border: 1px solid #dddddd;
     transition: all 0.2s;
+    border: transparent !important;
+    background-color: rgba(255, 255, 255) !important;
     outline:none;
 }
 .loginInput:focus{
@@ -251,8 +258,8 @@ body{
     margin: 0 auto;
 }
   
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -261,18 +268,18 @@ body{
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
+}
   
-  /* Container around content */
-  .timeContainer {
+/* Container around content */
+.timeContainer {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
+}
   
-  /* The circles on the timeline */
-  .timeContainer::after {
+/* The circles on the timeline */
+.timeContainer::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -283,20 +290,20 @@ body{
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
+}
   
-  /* Place the container to the left */
-  .left {
+/* Place the container to the left */
+.left {
     left: 0;
-  }
+}
   
-  /* Place the container to the right */
-  .right {
+/* Place the container to the right */
+.right {
     left: 50%;
-  }
+}
   
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
+/* Add arrows to the left container (pointing right) */
+.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -307,10 +314,10 @@ body{
     border: medium solid #e5ebe5;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent #e5ebe5;
-  }
+}
   
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
+/* Add arrows to the right container (pointing left) */
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -321,29 +328,29 @@ body{
     border: medium solid #e5ebe5;
     border-width: 10px 10px 10px 0;
     border-color: transparent #e5ebe5 transparent transparent;
-  }
+}
   
-  /* Fix the circle for containers on the right side */
-  .right::after {
+/* Fix the circle for containers on the right side */
+.right::after {
     left: -13px;
-  }
+}
   
-  /* The actual content */
-  .timeContent {
+/* The actual content */
+.timeContent {
     padding: 20px 30px;
     background-color:#e5ebe5;
     position: relative;
     border-radius: 1rem 0rem 1rem 0rem;
-  }
+}
   
   /* Media queries - Responsive timeline on screens less than 768px wide */
-  @media screen and (max-width: 768px) {
-  /* Place the timelime to the left */
+@media screen and (max-width: 768px) {
+    /* Place the timelime to the left */
     .timeline::after {
         left: 31px;
     }
   
-  /* Full-width containers */
+    /* Full-width containers */
     .timeContainer {
         width: 100%;
         padding-left: 70px;
@@ -354,14 +361,14 @@ body{
         left:0% !important; 
     }
   
-  /* Make sure that all arrows are pointing leftwards */
+    /* Make sure that all arrows are pointing leftwards */
     .timeContainer::before {
         left: 60px;
         border: medium solid #e5ebe5;
         border-width: 10px 10px 10px 0;
         border-color: transparent #e5ebe5 transparent transparent;
     }
-  /* Make sure all circles are at the same spot */
+    /* Make sure all circles are at the same spot */
     .left::after, .right::after {
         left: 15px;
     }
@@ -369,14 +376,31 @@ body{
         left: 4%;
     }
   
-  /* Make all right containers behave like the left ones */
+    /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
     }
     .smallright{
         left: 4%;
     }
-  }
+}
+.faq-tab:hover{
+    background-color: rgba(255, 255, 255,0.5);
+}
+.faq-tab::after{
+    content: "";
+    opacity:0;
+    width: 0% !important;
+    left: 43%;
+    bottom: -2px;
+    height: 4px;
+}
+.faq-tab:hover::after{
+    opacity: 1;
+    width:100% !important;
+    transform: translate(-43%, 0px);
+}
+  
 /* General CSS */
 .icon{
     font-family: 'ABeeZee', 'Montserrat', sans-serif;
@@ -442,8 +466,36 @@ hr{
 .highlight{
     background: url(assets/green-highlight.png);
     background-repeat: no-repeat;
-    background-size: 100% 95%;
+    background-size: 0% 95% !important;
     padding: 8px 0;
+    transition: all 0.3s;
+}
+.highlight.siteLoaded{
+    background-size: 100% 95% !important;
+}
+.boxText{
+    position: relative;
+    z-index:2;
+}
+.boxText::before{
+    content:'';
+    position:absolute;
+    background: #f3f3f3 !important;
+    height:40%;
+    width:0% !important;
+    z-index:-1 !important;
+    bottom:2px;
+    left:-12px;
+    transition: 1000ms ease;
+}
+.greenBack.boxText::before{
+    background: #c3ddc8 !important;
+}
+.fullBack.boxText::before{
+    height:100% !important;
+}
+.siteLoaded.boxText::before{
+    width:calc(100% + 20px) !important;
 }
 /* Leaves */
 .leave{
@@ -455,11 +507,11 @@ hr{
     border-radius: 1.5rem 0rem 1.5rem 0rem;
     border: 5px solid #e6e9e6;
 }
-input{
+/* input{
     border: transparent !important;
     background-color: rgba(255, 255, 255) !important;
     transition: all 0.3s;
-}
+} */
 /* input:focus{
     border-bottom: 3px solid rgba(95,216,64,0.25) !important;
 } */
@@ -567,6 +619,10 @@ input{
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important;
 } */
+.form-check-input:checked {
+    background-color: #5DB66D;
+    border-color: #5DB66D;
+}
 .smicon:hover{
     transition: 0.5s;
     filter:invert(77%);
