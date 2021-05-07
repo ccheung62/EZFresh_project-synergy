@@ -52,9 +52,9 @@ PDF of the following could be found under the `deliverables` folder<br>
 
 ## Assets 
 Picture, illustration, and icons are found from
-    - [unDraw](https://undraw.co/illustrations)
-    - [Pixabay](https://pixabay.com/) 
-    - [Font Awesome](https://fontawesome.com/)
+- [unDraw](https://undraw.co/illustrations)
+- [Pixabay](https://pixabay.com/) 
+- [Font Awesome](https://fontawesome.com/)
 
 
 
