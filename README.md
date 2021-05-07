@@ -12,6 +12,7 @@ This project is created for Project Synergy. Project Synergy is a semester-long 
 |Brianna V. Gonzalez |Speaker     |Technology Fellow
 |Kayla Wong          |Speaker     |Business Fellow
 |                    |Strategist  |Business Fellow
+
 *Notes: Our team unfortunately only had three fellows*
 
 ![EZ Fresh logo](assets/logo.png)
