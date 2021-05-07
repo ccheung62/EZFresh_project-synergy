@@ -1,5 +1,5 @@
 # Project Synergy
-This project is created for Project Synergy. Project Synergy is a semester-long group assigment created by [Diverse Influence](https://www.diverseinfluencers.org/program.html) where we<br>
+This is the landing page created for our mock business during Project Synergy. Project Synergy is a semester-long group assigment created by [Diverse Influence](https://www.diverseinfluencers.org/program.html) where we<br>
 - collaborate as a team of four (two technology fellow and two business fellow)
 - brainstorm a business idea 
 - create a marketing strategy
@@ -13,7 +13,7 @@ This project is created for Project Synergy. Project Synergy is a semester-long 
 |Kayla Wong          |Speaker     |Business Fellow
 |                    |Strategist  |Business Fellow
 
-*Notes: Our team unfortunately only had three fellows*
+*Notes: Our team unfortunately only had three memebers*
 
 ![EZ Fresh logo](assets/logo.png)
 
@@ -50,12 +50,45 @@ PDF of the following could be found under the `deliverables` folder<br>
 - Marketing Strategy 
 - PowerPoint
 
+# Website
+This is the first website I built after learning HTML, CSS, and Javascript. Although it was challenging to create a landing page from scratch, I learned a lot about how to implement different features that I had usually taken for granted.  
+- Responsiveness
+    - Some pictures would be hidden to prevent too much scrolling
+    - A toggler would appear on the navbar instead if the screen is too small
+    - Breakpoints and containers are used to make sure each section is presented with enough spacing
+- Form Validation
+    - I followed [this tutorial](https://www.youtube.com/watch?v=3GsKEtBcGTk) to implement form vaildation along with the basis of the login page
+- Meta Tags
+    - I used the Open Graph Meta Tags so the website would appear better when posted on social media
+- Animation
+    - There are animation to indicate when the user is hovering on links, navbar tabs, or buttons
+    - Different sections fades in as the user scrolls
+
 ## Assets 
 Picture, illustration, and icons are found from
 - [unDraw](https://undraw.co/illustrations)
 - [Pixabay](https://pixabay.com/) 
 - [Font Awesome](https://fontawesome.com/)
 
+## Tools
+Those are the libraries that I had used for this website 
+- [Google Chart](https://developers.google.com/chart/interactive/docs)
+    - This is used to create the `Civilian unemployment rate` chart in the product page
+    - I utilized the `option` variable to customize the chart in order to fit the theme of the website more
+- [Animation On Scroll](https://michalsnik.github.io/aos/)
+    - This creates different animations for the website as the user scroll through the website. 
+    - There are also custom event listeners that allowed me to do different operations after the animation. 
+        - The `Civilian unemployment rate` chart would start its animation again whenever the chart is faded in as the user scrolls
+        - The highlight under texts would only appear after the animation is complete
+- [Bootstrap](https://getbootstrap.com/)
+    - This framework helped made the website more responsive
+    - I had referenced various built-in features in the website including
+        - Breakpoints
+        - Cards
+        - Modals
+        - Navigation Bar
+            - Dropdown menu
+            - Toggler
 
 
 
