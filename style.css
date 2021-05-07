@@ -32,10 +32,7 @@ body{
     position: relative;
     text-align: center;
     margin-right: 16px;
-    /* text-decoration: none; */
     color: #004403 !important;
-    /* border-bottom: 2px solid transparent;
-    transition: border-bottom 0.5s; */
     transition: color 0.5s; 
     padding-right: 0.5rem!important;
     padding-left: 0.5rem !important;
@@ -65,7 +62,6 @@ body{
     text-decoration: none !important;
 }
 .active-nav-link{
-    /* text-decoration: none !important; */
     border-bottom: 2px solid #5DB66D !important;
     color:#5DB66D !important;
 }
@@ -88,21 +84,19 @@ body{
     letter-spacing: 1px;
 }
 /* Make the dropdown appear on hover */
-.navbar .nav-item .dropdown-menu{ display: none; }
-.navbar .nav-item:hover .dropdown-menu{ display: block; }
-.navbar .nav-item .dropdown-menu{ margin-top:0; }
+.navbar .nav-item .dropdown-menu{ 
+    display: none; 
+}
+.navbar .nav-item:hover .dropdown-menu{
+    display: block; 
+}
+.navbar .nav-item .dropdown-menu{ 
+    margin-top:0; 
+}
 
-/* Login/Sign Up Form */
-/* .blurImg{
-    height:100%;
-    background-image: url(assets/green-1033681_1280.jpg);
-    background-size: cover;
-    background-position:bottom;
-    background-repeat: no-repeat;
-} */
+/* Login */
 .loginForm{
     font-family: 'ABeeZee', 'Montserrat', sans-serif;
-    /* background-image: linear-gradient(120deg, #ebebeb 0%, #96e6a1 100%); */
     background-image: url(assets/flower-4865379_1920.png);
     background-size: cover;
     background-repeat:no-repeat;
@@ -149,7 +143,6 @@ body{
     display: flex;
     justify-content: center;
     align-content: center;
-    /* align-items: center; */
     padding-top: 80px;
     background-image: url(assets/leaves-5643327_1920.png);
     background-position: top;
@@ -172,13 +165,11 @@ body{
     background-position:center;
     background-size:contain;
 }
-
 /* Weekly Recipe Haul */
 .recipeCredit{
     font-size:small;
     font-style:italic;
 }
-
 /* Footer */
 .endFooter{
     font-family: 'ABeeZee', 'Montserrat', sans-serif;
@@ -248,8 +239,8 @@ body{
     max-width:50%;
     padding:5%;
 }
-/* Timeline */
-/* The actual timeline (the vertical ruler) */
+/* Timeline from https://www.w3schools.com/howto/howto_css_timeline.asp*/
+/* The line */
 .timeline {
     font-family: 'ABeeZee', 'Montserrat', sans-serif;
     font-size: 0.8em;
@@ -257,7 +248,6 @@ body{
     max-width: 1000px;
     margin: 0 auto;
 }
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: '';
     position: absolute;
@@ -370,6 +360,11 @@ body{
     .smallright{
         left: 4%;
     }
+    /* Centers login placement */
+    .form{
+        justify-content:center;
+        align-items: center;
+    }
 }
 .faq-tab:hover{
     background-color: rgba(255, 255, 255,0.5);
@@ -427,14 +422,6 @@ hr{
     background-color: transparent;
     border:transparent;
 }
-.card-colored{
-    /* border: 10px solid rgba(197, 197, 197,0.3) !important; */
-    box-shadow: 0 0 0 1rem rgba(197, 197, 197,0.35) !important; 
-    /* background-color: rgba(197, 197, 197, 0.1);  */
-    /* border-radius: 0rem 5rem 0rem 5rem !important; */
-    /* justify-content:center; */
-    background-image: linear-gradient(120deg, #b7e4bd 0%, #ebebeb 100%);
-}
 .card-img-top{
     border-radius: 50%;
     border: 5px solid rgba(163, 199, 166, 0.5);
@@ -448,6 +435,10 @@ hr{
 }
 .card-text{
     font-size: 0.9em;
+}
+.modal-title{
+    font-weight: bold;
+    color:#004403";
 }
 /* The highlight brush stroke */
 .highlight{
@@ -512,21 +503,14 @@ hr{
     .startText{ font-size:x-large; }
 }
 @media screen and (min-width:768px){
-    /* Centers login placement */
-    .form{
-        justify-content:center;
-        align-items: center;
-    }
-}
-@media screen and (min-width:768px){
     /* Place the chart in the product page */
     .chart{
         position:absolute;
-        top: -36%;
+        top: -30%;
     }
     /* Fix login placement */
     .form{
-        padding-bottom:8% !important;
+        padding-top:8% !important;
     }
 }
 
@@ -556,18 +540,10 @@ hr{
     border-radius: 1.5rem;
     transition: color 0.5s;
 }
-/* :focus{
-    box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important; 
-} */
 .btn:hover{
     background-color:#72b67e !important; 
     color:#ffffff !important;
 }
-/* .navbar-toggler:focus {
-    text-decoration: none;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(95,216,64,0.25) !important;
-} */
 .form-check-input:checked {
     background-color: #5DB66D;
     border-color: #5DB66D;

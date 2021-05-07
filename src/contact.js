@@ -50,7 +50,7 @@ function checkContact(modalElement){
         $("#tyModal").modal("show");
     }
     else{
-        setFormMessage(contact, "Requirements are not fullfilled");
+        setFormMessage(contact, "Please fill in everything first!");
     }
 }
 

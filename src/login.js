@@ -1,6 +1,3 @@
-var username;
-var loggedin = false;
-
 // Login
 // toggle the view password
 function viewPassword(passwordElement){
@@ -22,7 +19,7 @@ function viewPassword(passwordElement){
 }
 // creates error message on top of the form
 function setFormMessage(formElement, msg){
-    formElement.querySelector(".formErr").innerHTML = msg;
+    formElement.querySelector(".formErr").textContent = msg;
 }
 // create error message for individual inputs 
 function setInputError(inputElement, message) {
@@ -104,9 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             // hardset a username and password that works
             if (loginForm.querySelector(".username").value.length > 0 && loginForm.querySelector(".password").value === "password"){
-                username = loginForm.querySelector(".username").value;
-                loggedin = true;
-                window.location.href = "home.html";
+                setFormMessage(loginForm, "");
+                modalMess = "Thank you for your continuous support " + loginForm.querySelector(".username").value +
+                ". Unfortunately, the website is under maintenance indefinitely. Feel free to check again from time to time?";
+                loginForm.querySelector("#loginModal").querySelector(".modal-body").innerHTML = modalMess;
+                $("#loginModal").modal("show");
             }
             else {
                 // let the user know how to login after 5 attempts
@@ -130,9 +129,12 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             // redirect the person if everything is valid
             if (requirement){
-                username = createForm.querySelector(".username").value;
-                loggedin = true;
-                window.location.href = "home.html";
+                setFormMessage(createForm, "");
+                modalMess = "Thank you for creating an account for EZ Fresh and starting a new way to grocery!<br><br>Your username : " +  
+                createForm.querySelector(".username").value + "<br>Your password : " + createForm.querySelector(".password").value +
+                "<br><br>I definitely remembered that, don't worry.";
+                createForm.querySelector("#signUpModal").querySelector(".modal-body").innerHTML = modalMess;
+                $("#signUpModal").modal("show");
             }
             else{
                 setFormMessage(createForm, "Requirements are not fullfilled");
@@ -146,5 +148,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-
-// export {username, loggedin};

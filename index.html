@@ -128,6 +128,7 @@
             </div>
         </div>
     </section>
+
     <div class="container">
         <!-- Intro section -->
         <section class="row py-5">
@@ -180,7 +181,27 @@
                             Download our App!
                         </p>
                         <img src = "assets/download-icon.png" class = "img-fluid" style= "max-width:100px;margin-bottom:1rem">
-                        <button class = "btn mb-3" title = "Download EZ Fresh App">Download EZ Fresh</button>
+                        <button type="button" class="btn mb-3" title = "Download EZ Fresh App" data-bs-toggle="modal" data-bs-target="#downloadModal">
+                            Download EZ Fresh
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="downloadModalLabel">Thank you for your interest!</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body px-5">
+                                        Thank you for choosing EZ Fresh! You won't regret doing this because it's kinda hard to hate something non-existant
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </span>
                 </span>
             </div>
@@ -217,7 +238,7 @@
                         We believe everyone deserves high quality, locally-sourced produce delivered to your front door. Our philosophy: Discounts! 
                         <span class = "leave my-2">After 6 months of your registration <i class="far fa-arrow-alt-circle-right"></i></span>
                         <ul style = "margin-top:0px;"><ul style ="margin-top:0px;">
-                            <li>For <span style = "color:#4eb861">every $150 purchases, get $10</span> for free!</li>
+                            <li>For <span style = "color:#4eb861">every $150 you spent, get $10</span> for free!</li>
                             <li>Get <span style = "color:#4eb861">25% off all purchase every Wednesday</span> from 
                             your favorite supermarkets!</li>
                             <li>Recieve <span style = "color:#4eb861">personalized discount highlights</span> with our 
@@ -333,8 +354,8 @@
                 </p><hr class = "ms-2">
                 <ul class = "footercol" style = "list-style-type:none; padding:0px">
                     <li><a class = "prettyLink d-inline-flex" href = "login.html" title = "Login/Signup page">Manage Your Account</a></li>
-                    <li><a class = "prettyLink" href = "contact.html" title = "Contact page">Careers- Come Work with Us</a></li>
-                    <li><a class = "prettyLink" href = "contact.html" title = "Contact page">Partner with Us</a></li>
+                    <li><a class = "prettyLink" href = "contact.html#contactStart" title = "Contact page">Careers- Come Work with Us</a></li>
+                    <li><a class = "prettyLink" href = "contact.html#contactStart" title = "Contact page">Partner with Us</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-2">

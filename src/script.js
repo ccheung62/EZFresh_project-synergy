@@ -34,23 +34,19 @@ function switchNavBar(){
 }
 //switch plus to minus when expanded (faq)
 function switchPlus(iconElement){
-    console.log("trying to change the plus/minus icon here");
-    console.log("iconElement is", iconElement);
     const icon = iconElement.querySelector('i');
-    console.log("icon is ", icon);
     if (iconElement.querySelector(".fa-plus-square") != null){
-        console.log("the icon is currently plus so I am trying to change it to minus here");
         icon.classList.remove("fa-plus-square");
         icon.classList.add("fa-minus-square");
     }
     else {
-        console.log("the icon is currently minus so I am trying to change it to plus here");
         icon.classList.remove("fa-minus-square");
         icon.classList.add("fa-plus-square");
     }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    // animation on the highlight at the beginning
     swipeHighlight = document.querySelectorAll(".swipeAnimeStart");
     if (swipeHighlight != null){
         swipeHighlight.forEach(highlight => {
@@ -59,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// animation on the highlight as you scroll
 document.addEventListener("aos:in:swipeAnime", ({ detail }) => {
     let highlight = detail.querySelector(".highlight");
     highlight.classList.remove("siteLoaded");

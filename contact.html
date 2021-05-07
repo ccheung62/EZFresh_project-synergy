@@ -4,7 +4,7 @@
     <meta charset = "utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Description of EZ Fresh -->
-    <title>Contact Page。EZ Fresh</title>
+    <title>Contact。EZ Fresh</title>
     <meta name="description" content="Combining the aspect of meal delivery system and ordering locally-sourced produce with the 
     convenience of ordering takeout">
     <!-- Social Media description -->
@@ -91,7 +91,8 @@
     <div class = "row py-3 d-flex" style = "justify-content:center;background-image: linear-gradient(120deg, #ffffff 0%, #fdfbfb 100%);">
         <img style = "max-height:500px;width:auto" src = "assets/undraw_contact_us_15o2.png">
     </div>
-    <div class = "container">
+    <!-- Beginning -->
+    <div class = "container" id = "contactStart">
         <div class = "row pt-5" style = "text-align: center;">
             <div style = "position: relative;">
                 <p class = "d-inline-block heading swipeAnimeStart boxText greenBack" style = "font-size:2.2em;">Tell us everything!</p>
@@ -115,6 +116,7 @@
                 <p style = "color:gray"> Our phone number is <br>+1 800-777-7777</p>
             </div>
         </div>
+        <!-- Contact Form -->
         <p class = "py-5" style = "font-size:3em;">Or just do it here!</p>
         <div class = "row pb-5">
             <div class = "col-lg-6" data-aos="fade-up-right">
@@ -139,7 +141,8 @@
                                 <option value = "2">Supermarket Representative</option>
                                 <option value = "3">Potiental employee</option>
                                 <option value = "4">Sponsor/Potiental sponsor</option>
-                                <option value = "5">Someone interested about EZ Fresh</option>
+                                <option value = "5">Someone interested in EZ Fresh</option>
+                                <option value = "6">Someone else</option>
                             </select>
                             <div class = "formErrMsg"></div>
                         </div>
@@ -153,13 +156,12 @@
                             <label class="form-check-label ps-2 pt-1" for="sendEmail">Send me a copy via email</label>
                         </div>
                         <button onclick = "checkContact(this.parentElement)" class="btn px-5 my-2">Send</button>
-
                         <!-- Modal -->
                         <div class="modal fade" id="tyModal" tabindex="-1" aria-labelledby="tyModal" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel" style = "font-weight:bold;color:#004403">Thank you!</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body px-5">
@@ -224,8 +226,8 @@
                 </p><hr class = "ms-2">
                 <ul class = "footercol" style = "list-style-type:none; padding:0px">
                     <li><a class = "prettyLink d-inline-flex" href = "login.html" title = "Login/Signup page">Manage Your Account</a></li>
-                    <li><a class = "prettyLink" href = "contact.html" title = "Contact page">Careers- Come Work with Us</a></li>
-                    <li><a class = "prettyLink" href = "contact.html" title = "Contact page">Partner with Us</a></li>
+                    <li><a class = "prettyLink" href = "contact.html#contactStart" title = "Contact page">Careers- Come Work with Us</a></li>
+                    <li><a class = "prettyLink" href = "contact.html#contactStart" title = "Contact page">Partner with Us</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-2">

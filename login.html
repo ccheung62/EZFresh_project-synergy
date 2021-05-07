@@ -35,11 +35,13 @@
     </script>
     <script defer src = "src/script.js"></script>
     <script defer src = "src/login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Fonts from fontawesome -->
     <script src="https://kit.fontawesome.com/28ae02582e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Login Form -->
     <div class = "loginForm" id = "login">
         <a href = "index.html" class = "btn d-block" style = "text-decoration:none;background-color:#ffffff;position:absolute;top:4%;left:4%" title = "Back to home page">
             <i class="fas fa-arrow-circle-left"></i> Back
@@ -47,7 +49,7 @@
         <div class = "d-lg-flex d-none" style = "align-items:flex-end;justify-content: flex-end">
                 <img style = "max-height:500px;" src = "assets/undraw_remotely_2j6y.png">
         </div>
-        <form class ="form d-flex" style = "flex-direction:column;text-align:center;padding:0px">
+        <form class ="form d-flex" style = "flex-direction:column;text-align:center">
             <h1 class = "formMsg">
                 <span class = "leave" style = "border-radius: 0rem 1.5rem 0rem 1.5rem;"></span>
                 Login
@@ -68,16 +70,52 @@
                     <span onclick = "viewPassword(this.parentElement)"><i class="fas fa-eye" style = "cursor: pointer"></i></span>
                 </div>
             </div>
-            <button class="btn px-5 my-2">Login</button>
-
+            <!-- Button trigger modal -->
+            <button type="submit" class="btn mx-5 my-3">
+                Login
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="loginModalLabel">Thank you for loggin!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-5"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <p class = "formOption">
-                <a href = "#" class = "prettyLink" style = "border:transparent!important">Forgot your password?</a>
-            </p>
-            <p class = "formOption">
+                <!-- Button trigger modal -->
+                <a href = "" type="button" class="prettyLink" style = "border:transparent!important" data-bs-toggle="modal" data-bs-target="#passwordModal">
+                    Forgot your password
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="passwordModalLabel">Recovering your password...</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                You had set your password to "password" <br> Trust me
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <a id="signUpLink" href = "" class = "prettyLink" style = "border:transparent!important">Don't have an account? Sign up</a>
             </p>
         </form>
     </div>
+
     <div class = "loginForm formHidden" id = "signup">
         <a href = "index.html" class = "btn d-block" style = "text-decoration:none;background-color:#ffffff;position:absolute;top:4%;left:4%" title = "Back to home page">
             <i class="fas fa-arrow-circle-left"></i> Back
@@ -117,8 +155,26 @@
                     <span onclick = "viewPassword(this.parentElement)"><i class="fas fa-eye" style = "cursor: pointer"></i></span>
                 </div>
             </div>
-            <button type = "submit" class="btn px-5 my-2">Sign up</button>
+            <!-- Button trigger modal -->
+            <button type="submit" class="btn mx-5 my-3">
+                Sign Up
+            </button>
 
+            <!-- Modal -->
+            <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="signUpModalLabel">Thank you for signing up!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body px-5"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <p class = "formOption">
                 <a id="loginLink" href = "" class = "prettyLink">Already have an account? Sign in</a>
             </p>
